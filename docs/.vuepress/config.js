@@ -1,3 +1,8 @@
+// const sidebar = require('../../config/sidebarConfig');
+const sidebar = require('../../config/sidebar');
+const nav = require('../../config/navConfig');
+const plugin = require('../../config/pluginConfig');
+
 module.exports = {
     base: '/notebook/',
     title: 'Blog Note',// 标题
@@ -43,71 +48,9 @@ module.exports = {
             }
         },
         /*导航栏*/
-        nav: [
-            {text: '主页', link: '/'},
-            {
-                text: '前端',
-                // 这里是下拉列表展现形式。
-                items: [
-                    {text: 'VUE', link: '/note/VUE/'},
-                    {text: 'CSS', link: '/note/CSS/'},
-                    {text: 'JavaScript', link: '/note/JavaScript/'},
-                ]
-            },
-            {text: '联系我', link: '/contact/'},
-            {text: '关于我', link: '/about/'},
-        ],
+        nav: nav,
         /*侧边栏*/
-        sidebar: {
-            '/note/VUE/': [
-                '/note/VUE/',
-                {
-                    title: 'Group 1',
-                    children: [
-                        'one',
-                        'two'
-                    ]
-                },
-                {
-                    title: 'Group 2',
-                    children: [
-                        'one',
-                        'two']
-                }
-            ],
-            '/note/CSS/': [
-                '/note/CSS/',
-                {
-                    title: 'Group 1',
-                    children: [
-                        'one',
-                        'two'
-                    ]
-                },
-                {
-                    title: 'Group 2',
-                    children: [
-                        'one',
-                        'two']
-                }
-            ],
-            '/note/JavaScript/': [
-                '/note/JavaScript/',
-                {
-                    title: 'Group 1',
-                    children: [
-                        'one',
-                        'two'
-                    ]
-                },
-                {
-                    title: 'Group 2',
-                    children: [
-                        'one',
-                        'two']
-                }
-            ]
-        }
+        sidebar: sidebar,
     },
     head: [
         ['link', {rel: 'icon', href: '/image/logo.png'}],
