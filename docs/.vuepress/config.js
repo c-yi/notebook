@@ -8,9 +8,18 @@ module.exports = {
     title: 'Blog Note',// 标题
     sidebarDepth: 2,
     description: 'Just playing around',
-    markdown: {lineNumbers: true,},
-    /*语言配置*/
-    locales: {
+    markdown: {
+        lineNumbers: true,  // markdown-it-anchor 的选项
+        /*anchor: {permalink: false},
+        // markdown-it-toc 的选项
+        toc: {includeLevel: [1, 2]},
+        config: md => {
+            // 使用更多的 markdown-it 插件!
+            md.use(require('markdown-it-xxx'))
+        }*/
+    },
+    /*语言配置 暂时未启用*/
+   /* locales: {
         // 键名是该语言所属的子路径
         // 作为特例，默认语言可以使用 '/' 作为其路径。
         '/': {
@@ -23,7 +32,7 @@ module.exports = {
             title: 'VuePress',
             description: 'Vue-powered Static Site Generator'
         }
-    },
+    },*/
     serviceWorker: true,
     /*主题配置*/
     themeConfig: {
@@ -40,6 +49,12 @@ module.exports = {
         collapse: true,
         search: true,
         searchMaxSuggestions: 10,
+        /*
+        //algolia搜索,等待回复邮件
+        algolia: {
+            apiKey: '<API_KEY>',
+            indexName: '<INDEX_NAME>'
+        },*/
         updatePopup: true,//内容更新
         serviceWorker: {
             updatePopup: {
@@ -47,13 +62,16 @@ module.exports = {
                 buttonText: "刷新获取"
             }
         },
+
         /*导航栏*/
         nav: nav,
         /*侧边栏*/
         sidebar: sidebar,
     },
     head: [
-        ['link', {rel: 'icon', href: '/image/logo.png'}],
-        ['link', {rel: 'manifest', href: '/manifest.json'}]
+        ['link', {rel: 'icon', href: '/image/icon-128x128.png'}],
+        ['link', {rel: 'apple-touch-icon', href: '/image/icon-128x128.png'}],
+        ['link', {rel: 'manifest', href: '/manifest.json'}],//类似于单页面版本控制
+        ['link', {rel: 'theme', content: '#FFFFFF'}],
     ],
 };
