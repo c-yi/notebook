@@ -1,6 +1,6 @@
 // const sidebar = require('../../config/sidebarConfig');
 const utils = {
-    genSidebar: function (title, children = [''], collapsable = true, sidebarDepth = 1) {
+    genSidebar: function (title, children = [''], collapsable = true, sidebarDepth = 2) {
         return {
             title,
             collapsable,
