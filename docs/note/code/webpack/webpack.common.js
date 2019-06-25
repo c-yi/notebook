@@ -8,11 +8,6 @@ let DllReferencePlugin = require('webpack/lib/DllReferencePlugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; //檢測打包體積
 
 module.exports = {
-    /* entry: [
-         'webpack/hot/dev-server',
-         'webpack-dev-server/client?http://localhost:4040',
-         path.resolve(__dirname, './src/index.js')
-     ],*/
     output: {
         filename: 'js/bundle.[hash].js',  //打包后的文件名,中间加hash值每次生成不同的文件,避免缓存问题
         path: path.resolve(__dirname, 'build'), // 路径必须是绝对路径
@@ -58,20 +53,16 @@ module.exports = {
                         "@babel/plugin-transform-runtime"
                     ]
                 },
-
             }],
             //共享进程池
             //threadPool: happyThreadPool
         }),
         //检测打包体积
-        new BundleAnalyzerPlugin(
-            {
-                analyzerMode: 'disabled',
-                generateStatsFile: true,
-                statsOptions: {source: false}
-            }
-        ),
-
+        new BundleAnalyzerPlugin({
+            analyzerMode: 'disabled',
+            generateStatsFile: true,
+            statsOptions: {source: false}
+        }),
     ],
     optimization: { // 优化项
         splitChunks: {
@@ -100,51 +91,30 @@ module.exports = {
                 }
             }
         },
-        /* splitChunks: {
-             chunks: 'all',
-             cacheGroups: {
-                 vendors: { //第三方模块
-                     priority: 1,
-                     test: /[\\/]node_modules[\\/]/,
-                     chunks: 'all',
-                     minSize: 0,
-                     minChunks: 1
-                 },
-                 common: { //公共模块
-                     chunks: 'initial',
-                     minChunks: 1,
-                     minSize: 0,
-                 }
-             }
-         },*/
     },
     // externals: {jquery:"$"},
     module: {
         noParse: /jquery/,// 不去解析jquery中的依赖项
         rules: [
-            // 处理 html圖片 文件
-            {
+            {// 处理 html圖片 文件
                 test: /\.html$/, use: {loader: "html-withimg-loader"}
             },
-            // 处理 圖片 文件
-            {
+            {// 处理 圖片 文件
                 test: /\.(jpg|png|gif|bmp|jpeg|webp)$/,
                 exclude: /node_modules/,
                 use: {loader: "url-loader", options: {limit: 100 * 1024, outputPath: '/img/'}}
             },
-            // 处理 普通 css 文件
-            {
+            {// 处理 普通 css 文件
                 test: /\.css$/, use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
             },
-            // 处理 普通 less 文件
-            {
+            {// 处理 普通 less 文件
                 test: /\.less$/, use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'less-loader']//把less转化成css
             },
-            // 处理字体文件
-            {
+            { // 处理字体文件
                 test: /\.(eot|woff2?|ttf|svg)$/,
                 use: [{
-                    loader: "url-loader", options: {
+                    loader: "url-loader",
+                    options: {
                         name: "[name]-[hash:5].min.[ext]",
                         limit: 5000,
                         publicPath: "/fonts/",
@@ -152,25 +122,22 @@ module.exports = {
                     }
                 }]
             },
-            // 处理 普通 scss 文件
-            {
+            {// 处理 普通 scss 文件
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader, // 将 JS 字符串生成为 style 节点
-                    "css-loader", // 将 CSS 转化成 CommonJS 模块
+                    "css-loader", // 将 CSS 转化成 CommonJS 模块
                     'postcss-loader',
                     "sass-loader" // 将 Sass 编译成 CSS，默认使用 Node Sass
                 ],
             },
-            //處理VUE
-            {
+            { //處理VUE
                 test: /\.vue$/,
                 exclude: /node_modules/,
                 include: path.resolve(__dirname, "src"),
                 use: ['vue-loader'],
             },
-            // 处理 普通 js文件
-            {
+            { // 处理 普通 js文件
                 test: /\.(js|jsx)$/,
                 exclude: "/node_modules/",
                 include: path.resolve(__dirname, "src"),
@@ -179,11 +146,9 @@ module.exports = {
         ]
     },
     resolve: {
-        alias: {
-            //确定vue的构建版本
+        alias: {//确定vue的构建版本
             'vue$': 'vue/dist/vue.esm.js',
-            // 路径映射
-            '@': path.resolve('src'),
+            '@': path.resolve('src'), // 路径映射
             '~': path.resolve('src/public/css'),
             components: './components/'
         },
