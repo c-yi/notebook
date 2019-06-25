@@ -2,7 +2,7 @@
 const {readdir, writeFile} = require('fs');
 const {resolve} = require('path');
 
-const FOLDERPATH = 'D:\\NOTEBOOK\\docs\\note\\frontend\\vue';
+const FOLDERPATH = 'C:\\CYworkSpace\\work\\notebook\\docs\\note\\tools\\webpack';
 readdir(FOLDERPATH, (err, files) => {
     let fileNames = [];
     let temp = false;
