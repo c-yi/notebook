@@ -14,6 +14,7 @@ module.exports = {
     '/note/backend/node/': [backend.node],
     '/note/backend/python/': [backend.python],
     '/note/backend/php/': [backend.php],
+    '/note/backend/database/': [backend.database],
 
     '/note/tools/webpack/': [tools.webpack],
     '/note/tools/git/': [tools.git],
