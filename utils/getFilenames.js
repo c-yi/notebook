@@ -2,7 +2,7 @@
 const {readdir, writeFile} = require('fs');
 const {resolve} = require('path');
 
-const FOLDERPATH = 'C:\\CYworkSpace\\work\\notebook\\docs\\note\\tools\\webpack';
+const FOLDERPATH = 'C:\\CYworkSpace\\work\\notebook\\docs\\note\\backend\\java';
 readdir(FOLDERPATH, (err, files) => {
     let fileNames = [];
     let temp = false;

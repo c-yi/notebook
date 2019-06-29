@@ -18,6 +18,7 @@ module.exports = [
             {text: 'Python', link: '/note/backend/python/'},
             {text: 'PHP', link: '/note/backend/php/'},
             {text: 'node', link: '/note/backend/node/'},
+            {text: 'Java', link: '/note/backend/java/'},
         ]
     },
     {
