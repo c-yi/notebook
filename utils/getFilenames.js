@@ -2,7 +2,7 @@
 const {readdir, writeFile} = require('fs');
 const {resolve} = require('path');
 
-const FOLDERPATH = 'D:\\NOTEBOOK\\docs\\note\\backend\\java';
+const FOLDERPATH = 'D:\\NOTEBOOK\\docs\\note\\frontend\\react';
 readdir(FOLDERPATH, (err, files) => {
     let fileNames = [];
     let temp = false;
