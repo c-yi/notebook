@@ -28,3 +28,10 @@ export default (state = defaultState, action) => {
 
 // reducer
 ```
+```jsx harmony
+this.state = store.getState();
+// 订阅store ,如果 store 发生改变,数据就会更新
+store.subscribe(() => {
+    this.setState(store.getState())
+});
+```
