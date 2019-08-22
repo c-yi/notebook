@@ -19,6 +19,7 @@ module.exports = {
 
     '/note/tools/webpack/': [tools.webpack],
     '/note/tools/git/': [tools.git],
+    '/note/tools/mysql/': [tools.mysql],
 
     '/note/app/flutter/': [app.flutter],
     '/note/app/reactNative/': [app.reactNative],

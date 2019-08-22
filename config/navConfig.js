@@ -27,6 +27,7 @@ module.exports = [
         items: [
             {text: 'webpack', link: '/note/tools/webpack/'},
             {text: 'Git', link: '/note/tools/git/'},
+            {text: 'MySQL', link: '/note/tools/mysql/'},
         ]
     },
     {
