@@ -8,15 +8,9 @@ module.exports = {
     title: 'Blog Note',// 标题
     sidebarDepth: 2,
     description: 'Just playing around',
+    plugins: ['@vuepress/nprogress','@vuepress/back-to-top'],
     markdown: {
         lineNumbers: true,  // markdown-it-anchor 的选项
-        /*anchor: {permalink: false},
-        // markdown-it-toc 的选项
-        toc: {includeLevel: [1, 2]},
-        config: md => {
-            // 使用更多的 markdown-it 插件!
-            md.use(require('markdown-it-xxx'))
-        }*/
     },
     /*语言配置 暂时未启用*/
    /* locales: {
