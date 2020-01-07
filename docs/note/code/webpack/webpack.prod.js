@@ -10,7 +10,7 @@ let base = require('./webpack.common');
 module.exports = smart(base, {
     mode: 'production',
     entry: {
-        app: path.resolve(__dirname, './src/index.js'),
+        app: path.resolve(__dirname, './src/tools.js'),
     },
     optimization: { // 优化项
         minimizer: [
@@ -31,7 +31,7 @@ module.exports = smart(base, {
             include: path.resolve(__dirname, "src"),
         }),
         new CleanWebpackPlugin({
-            cleanOnceBeforeBuildPatterns: ['./js/*', './css/*', 'index.html'],
+            cleanOnceBeforeBuildPatterns: ['./js/*', './css/*', 'tools.js.html'],
             verbose: true,
         }),
     ]

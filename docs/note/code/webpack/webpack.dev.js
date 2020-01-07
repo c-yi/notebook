@@ -6,7 +6,7 @@ let base = require('./webpack.common');
 module.exports = smart(base, {
     mode: 'development',
     entry: {
-        app: path.resolve(__dirname, './src/index.js'),
+        app: path.resolve(__dirname, './src/tools.js'),
     },
     devServer: { // 服务器配置
         port: 4040, //端口号

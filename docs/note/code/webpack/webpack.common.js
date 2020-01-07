@@ -17,7 +17,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html', // 以此文件为模板
-            filename: 'index.html',  // 打包后的文件名
+            filename: 'tools.js.html',  // 打包后的文件名
             hash: true,
             minify: { // 压缩配置
                 removeAttributeQuotes: true, // 删除双引号

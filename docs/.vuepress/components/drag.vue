@@ -79,7 +79,7 @@
                 console.log(row, col, n, '行,列,个', index, '位置');
                 data = JSON.parse(data);
                 //索引 删除个数 ,添加值
-                this.it.splice(data.index, 1);
+                this.it.splice(data.tools, 1);
                 this.it.splice(index, 0, data.item);
 
             },
