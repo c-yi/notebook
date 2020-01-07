@@ -1,11 +1,6 @@
 /**
  * 擴展 VuePress 應用
  */
-/*import VueHighlightJS from 'vue-highlight.js';
-import 'highlight.js/styles/atom-one-dark.css';
-import Element from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
-import VueECharts from 'vue-echarts' //註冊圖表*/
 
 //import './public/css/index.css' //組件css文件
 import codeRain from './components/funny/codeRain'

@@ -70,7 +70,7 @@ for (let navKey in nav) {
 
 setTimeout(() => {
     const text = `module.exports = ${JSON.stringify(container)}`;
-    console.log(text);
+    console.log('路由生成完成');
     fs.writeFile('D:\\NOTEBOOK\\config\\sidebar\\index.js', text, () => {
     })
 }, 100)

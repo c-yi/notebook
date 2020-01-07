@@ -27,12 +27,6 @@ module.exports = {
         collapse: true,
         search: true,
         searchMaxSuggestions: 10,
-        /*
-        //algolia搜索,等待回复邮件
-        algolia: {
-            apiKey: '<API_KEY>',
-            indexName: '<INDEX_NAME>'
-        },*/
         updatePopup: true,//内容更新
         serviceWorker: {
             updatePopup: {
@@ -40,7 +34,6 @@ module.exports = {
                 buttonText: '刷新获取'
             }
         },
-
         /*导航栏*/
         nav: nav,
         /*侧边栏*/
