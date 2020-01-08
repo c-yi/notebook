@@ -5,7 +5,7 @@ module.exports = {
         {path: '/note/frame/', children: ['react', 'vue', 'plugin']}
     ],
     backend: [
-        {path: '/note/backend/', children: ['docker', 'mysql', 'node', 'python']}
+        {path: '/note/backend/', children: ['mysql', 'node', 'python']}
     ],
     base: [
         {path: '/note/base/', children: ['algorithm', 'dataStructure', 'designPattern', 'network']}
@@ -14,7 +14,7 @@ module.exports = {
         {path: '/note/others/', children: ['funny', 'mood', 'read']}
     ],
     tools: [
-        {path: '/note/tools/', children: ['browser', 'git', 'webpack']}
+        {path: '/note/tools/', children: ['browser', 'git', 'webpack', 'linux']}
     ]
 };
 

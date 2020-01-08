@@ -22,7 +22,6 @@ module.exports = [
         text: '后端',
         items: [
             {text: 'Python', link: '/note/backend/python/'},
-            {text: 'Docker', link: '/note/backend/Docker/'},
             {text: 'node', link: '/note/backend/node/'},
             {text: 'MySQL', link: '/note/backend/mysql/'}
         ]
@@ -32,19 +31,20 @@ module.exports = [
         items: [
             {text: 'webpack', link: '/note/tools/webpack/'},
             {text: 'Git', link: '/note/tools/git/'},
-            {text: '浏览器', link: '/note/tools/browser/'}
+            {text: '浏览器', link: '/note/tools/browser/'},
+            {text: 'linux', link: '/note/tools/linux/'}
 
         ]
     },
     {
-        text: '其他',
-        items: [
+        text: '其他',link: '/note/others/'
+        /*items: [
             {text: 'read', link: '/note/others/read/'},
             {text: 'funny', link: '/note/others/funny/'},
             {text: 'mood', link: '/note/others/mood/'},
             {text: '关于我', link: '/note/about/'}
             //{text: '联系我', link: '/contact/'},
-        ]
+        ]*/
     }
 
 ];

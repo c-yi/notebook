@@ -1,6 +1,4 @@
----
-pageClass: customer-page-class
----
+
 
 ## 关于我
     工作差不多两年的小前端
@@ -9,4 +7,5 @@ pageClass: customer-page-class
     喜欢数码,
     
 ## github
+
 

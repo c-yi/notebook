@@ -1,13 +1,13 @@
 const sidebar = require('../../config/sidebar');
 const nav = require('../../config/navbar');
-const plugin = require('../../config/pluginConfig');
+const plugins = require('../../config/pluginConfig');
 
 module.exports = {
     base: '/notebook/',
     title: 'Blog Note',// 标题
-    sidebarDepth: 2,
+    sidebarDepth: 3,
     description: 'Just playing around',
-    plugins: ['@vuepress/nprogress', '@vuepress/back-to-top'],
+    plugins: plugins,
     markdown: {
         lineNumbers: true  // markdown-it-anchor 的选项
     },
