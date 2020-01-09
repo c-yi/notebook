@@ -8,6 +8,7 @@ module.exports = {
     sidebarDepth: 3,
     description: 'Just playing around',
     plugins: plugins,
+    cache:true,
     markdown: {
         lineNumbers: true  // markdown-it-anchor 的选项
     },
