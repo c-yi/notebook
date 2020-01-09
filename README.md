@@ -2,7 +2,7 @@
 
 
 <div  style="text-align:center">用来记录每天的收获<div>
-<img src'./dosc/.vuepress/public/image/js.gif'>
+<img src='./dosc/.vuepress/public/image/js.gif' />
 
 
 
