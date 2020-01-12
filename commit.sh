@@ -4,7 +4,7 @@ set -e
 time=$(date "+%Y/%m/%d %H:%M:%S")
 # echo "${time} 提交"
 git add -A
-git commit -m '${time} 提交'
+git commit -m "${time} 提交"
 
 # 發佈
 git push
