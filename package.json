@@ -8,7 +8,8 @@
     "generate": "node config/sidebar/generate.js",
     "dev": "npm run generate && vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash deploy.sh",
+    "commit": "bash commit.sh"
   },
   "repository": {
     "type": "git",

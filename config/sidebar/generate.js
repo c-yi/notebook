@@ -1,8 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 const nav = require('./config');
-const readPwd = 'D:\\NOTEBOOK\\docs\\';
-//const readPwd = path.resolve('../../docs');
+
+const readPwd = path.resolve(__dirname, '../../docs/');
+const writePwd = path.resolve(__dirname, './index.js');
 
 
 // 临时容器
@@ -71,7 +72,7 @@ for (let navKey in nav) {
 setTimeout(() => {
     const text = `module.exports = ${JSON.stringify(container)}`;
     console.log('路由生成完成');
-    fs.writeFile('D:\\NOTEBOOK\\config\\sidebar\\index.js', text, () => {
+    fs.writeFile(writePwd, text, () => {
     })
 }, 100)
 
