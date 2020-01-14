@@ -14,7 +14,7 @@ git add -A
 # 提交
 git commit -m "${msg} - ${time}"
 # 更新
-git pull
+# git pull
 # 發佈
 git push -u origin master
 
