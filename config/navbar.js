@@ -12,8 +12,8 @@ module.exports = [
     {
         text: '基础',
         items: [
-            {text: '算法', link: '/note/base/algorithm/'},
             {text: '数据结构', link: '/note/base/dataStructure/'},
+            {text: '算法', link: '/note/base/algorithm/'},
             {text: '设计模式', link: '/note/base/designPattern/'},
             {text: '网络', link: '/note/base/network/'}
         ]
