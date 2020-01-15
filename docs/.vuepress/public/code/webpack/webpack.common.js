@@ -2,7 +2,7 @@ let path = require('path'); //
 let MiniCssExtractPlugin = require('mini-css-extract-plugin'); //生成link标签的形式引入到页面
 let webpack = require('webpack'); //引入webpack
 let VueLoaderPlugin = require('vue-loader/lib/plugin');
-let HtmlWebpackPlugin = require('html-webpack-plugin');
+let HtmlWebpackPlugin = require('HTML-webpack-plugin');
 let HappyPack = require('happypack');
 let DllReferencePlugin = require('webpack/lib/DllReferencePlugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; //檢測打包體積
@@ -16,8 +16,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html', // 以此文件为模板
-            filename: 'tools.js.html',  // 打包后的文件名
+            template: './src/index.HTML', // 以此文件为模板
+            filename: 'tools.js.HTML',  // 打包后的文件名
             hash: true,
             minify: { // 压缩配置
                 removeAttributeQuotes: true, // 删除双引号
@@ -97,7 +97,7 @@ module.exports = {
         noParse: /jquery/,// 不去解析jquery中的依赖项
         rules: [
             {// 处理 html圖片 文件
-                test: /\.html$/, use: {loader: "html-withimg-loader"}
+                test: /\.html$/, use: {loader: "HTML-withimg-loader"}
             },
             {// 处理 圖片 文件
                 test: /\.(jpg|png|gif|bmp|jpeg|webp)$/,

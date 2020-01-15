@@ -1,12 +1,10 @@
-我的配置信息为：
-
 # typescript
 
 ## 配置
 
 > file watchers
 
-+ Program：‪C:\Users\chenwei\AppData\Roaming\npm\tsc.cmd
++ Program：‪C:\Users\name\AppData\Roaming\npm\tsc.cmd
 + Arguments：--sourcemap --target "ES5"
 + Output paths to refresh：$FileNameWithoutExtension$.js:$FileNameWithoutExtension$.js.map
 + Working directory：$FileDir$
@@ -21,8 +19,8 @@
     "target": "es5",                       // 指定 ECMAScript 目标版本: 'ES3' (default), 										'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'
     "module": "commonjs",                  // 指定使用模块: 'commonjs', 'amd', 'system', 'umd' or 'es2015'
     "lib": [],                             // 指定要包含在编译中的库文件
-    "allowJs": true,                       // 允许编译 javascript 文件
-    "checkJs": true,                       // 报告 javascript 文件中的错误
+    "allowJs": true,                       JS
+    "checkJs": true,                       JS
     "jsx": "preserve",                     // 指定 jsx 代码的生成: 'preserve', 'react-native', or 'react'
     "declaration": true,                   // 生成相应的 '.d.ts' 文件
     "sourceMap": true,                     // 生成相应的 '.map' 文件

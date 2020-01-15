@@ -31,7 +31,7 @@ module.exports = smart(base, {
             include: path.resolve(__dirname, "src"),
         }),
         new CleanWebpackPlugin({
-            cleanOnceBeforeBuildPatterns: ['./js/*', './css/*', 'tools.js.html'],
+            cleanOnceBeforeBuildPatterns: ['./js/*', './css/*', 'tools.js.HTML'],
             verbose: true,
         }),
     ]

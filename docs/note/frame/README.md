@@ -1,2 +1,2 @@
 # 框架通识
-## MVVM 架构
+![MVC-MVVM](~@img/MVC-MVVM.png)

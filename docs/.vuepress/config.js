@@ -1,18 +1,17 @@
 const sidebar = require('../../config/sidebar');
 const nav = require('../../config/navbar');
 const plugins = require('../../config/pluginConfig');
-
+const path = require('path');
 module.exports = {
     base: '/notebook/',
     title: 'Blog Note',// 标题
-    sidebarDepth: 3,
+    sidebarDepth: 2,
     description: 'Just playing around',
     plugins: plugins,
-    cache:true,
+    cache: true,
     markdown: {
         lineNumbers: true  // markdown-it-anchor 的选项
     },
-    serviceWorker: true,
     /*主题配置*/
     themeConfig: {
         lastUpdated: '最近更新于',//最后更新时间
@@ -28,21 +27,21 @@ module.exports = {
         collapse: true,
         search: true,
         searchMaxSuggestions: 10,
-        updatePopup: true,//内容更新
-        serviceWorker: {
-            updatePopup: {
-                message: '有新内容已推送',
-                buttonText: '刷新获取'
-            }
-        },
         /*导航栏*/
         nav: nav,
         /*侧边栏*/
         sidebar: sidebar
     },
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@img': path.join(__dirname, './public/image'),
+            }
+        }
+    },
     head: [
-        ['link', {rel: 'icon', href: '/image/icon-128x128.png'}],
-        ['link', {rel: 'apple-touch-icon', href: '/image/icon-128x128.png'}],
+        ['link', {rel: 'icon', href: '/image/PWA/icon-128x128.png'}],
+        ['link', {rel: 'apple-touch-icon', href: '/image/PWA/icon-128x128.png'}],
         ['link', {rel: 'manifest', href: '/manifest.json'}],//类似于单页面版本控制
         ['link', {rel: 'theme', content: '#FFFFFF'}]
     ]

@@ -2,14 +2,6 @@
 module.exports = [
     {text: '主页', link: '/'},
     {
-        text: '前端',
-        items: [
-            {text: '基础', link: '/note/frontend/'},
-            {text: '框架', link: '/note/frame/'},
-            {text: '移动端', link: '/note/app/'}
-        ]
-    },
-    {
         text: '基础',
         items: [
             {text: '数据结构', link: '/note/base/dataStructure/'},
@@ -19,10 +11,18 @@ module.exports = [
         ]
     },
     {
+        text: '前端',
+        items: [
+            {text: '基础', link: '/note/frontend/'},
+            {text: '框架', link: '/note/frame/'},
+            {text: '移动端', link: '/note/app/'}
+        ]
+    },
+    {
         text: '后端',
         items: [
-            {text: 'Python', link: '/note/backend/python/'},
             {text: 'node', link: '/note/backend/node/'},
+            {text: 'Python', link: '/note/backend/python/'},
             {text: 'MySQL', link: '/note/backend/mysql/'}
         ]
     },
@@ -32,19 +32,20 @@ module.exports = [
             {text: 'webpack', link: '/note/tools/webpack/'},
             {text: 'Git', link: '/note/tools/git/'},
             {text: '浏览器', link: '/note/tools/browser/'},
-            {text: 'linux', link: '/note/tools/linux/'}
+            {text: 'linux', link: '/note/tools/linux/'},
+            {text: '其他', link: '/note/others/'}
 
         ]
-    },
-    {
-        text: '其他',link: '/note/others/'
-        /*items: [
+    }
+    /*{
+        text: '其他', link: '/note/others/',
+        items: [
             {text: 'read', link: '/note/others/read/'},
             {text: 'funny', link: '/note/others/funny/'},
             {text: 'mood', link: '/note/others/mood/'},
             {text: '关于我', link: '/note/about/'}
             //{text: '联系我', link: '/contact/'},
-        ]*/
-    }
+        ]
+    }*/
 
 ];

@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /image/icon-512x512.png
+heroImage: /image/PWA/icon-512x512.png
 tagline: 你好像发现了什么了不起的东西,哈哈哈哈
 actionText: 关于我 →
 actionLink: /note/about/

@@ -74,7 +74,6 @@ export namespace LinkedListPackage {
             node.next = null;
             this.size--;
             return node
-
         }
 
         removeFirst(): nodeType {
@@ -88,10 +87,9 @@ export namespace LinkedListPackage {
         showList(): void {
             let temp: nodeType | null = this.head;
             while (temp) {
-                console.log(temp.data)
+                console.log(temp.data);
                 temp = temp.next
             }
-
         }
     }
 }

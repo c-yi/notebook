@@ -1,3 +1,4 @@
+# 初始化
 当我们 在项目中使用 new Vue ({}) 创建的时候,就知道 vue 是一个类
 
 所以`src/core/instance/index.js`这个文件中创建了 Vue 这个类

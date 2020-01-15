@@ -17,7 +17,7 @@
 function patch(prev, next, container) {
   let prevFlag = prev.flag,
     nextFlag = next.flag;
-  // 如果Flag 的 类型不同直接替换 一个是 html 一个是 text
+  Html
   if (prevFlag !== nextFlag) {
     replaceVnode(prev, next, container)
   } else if (nextFlag === vnodeType.HTML) {
