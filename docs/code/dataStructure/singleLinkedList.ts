@@ -48,7 +48,7 @@ export namespace LinkedListPackage {
             let newNode = new Node(data);
             let prev = this.find(this.head, index, 0);
             newNode.next = prev.next;
-            newNode.prev = prev;
+            //newNode.prev = prev
             prev.next = newNode;
             this.size++;
             return prev.next;
@@ -66,22 +66,27 @@ export namespace LinkedListPackage {
             this.addNode(data, this.size)
         }
 
-        removeNode(index: number): nodeType {
-            let current = this.find(this.head, index, 0);
-
-            if (current.next) { //判断是不是最后还一个
-                // 上一个节点 => 下一个节点
-                current.prev.next = current.next;
-                // 下一个节点 => 上一个节点
-                current.next.prev = current.prev;
-            } else {
-                current.prev.next = null
+        reverse() {
+            let newList: nodeType = new Node(null);
+            let current = this.head.next;
+            let next: nodeType;
+            while (current) {
+                next = current.next; // 暂存当前节点的下一个节点,后面需要用到
+                current.next = newList.next; // 当前current的下一个节点指向新的节点的最前端
+                newList.next = current;// 将 current 赋值给新链表
+                current = next //链表指针后移
             }
-            // 清空节点
-            //node.next = null;
-            this.size--;
-            return current
+            this.head = newList;
+        }
 
+        removeNode(index: number): nodeType {
+            let prev = this.find(this.head, index - 1, 0);
+            let node = prev.next;
+            prev.next = node.next;
+            // 清空节点
+            node.next = null;
+            this.size--;
+            return node
         }
 
         removeFirst(): nodeType {
@@ -92,23 +97,12 @@ export namespace LinkedListPackage {
             return this.removeNode(this.size)
         }
 
-
         showList(): void {
             let temp: nodeType | null = this.head;
             while (temp) {
-                console.log(temp.data)
+                console.log(temp.data);
                 temp = temp.next
             }
-
         }
     }
-
-    let l1 = new LinkedList();
-    l1.addToLast("第1个元素");
-    l1.addToLast("第2个元素");
-    l1.addToLast("第3个元素");
-    l1.addToLast("第4个元素");
-    l1.showList();
-    l1.removeNode(2);
-    l1.showList()
 }

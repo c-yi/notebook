@@ -29,7 +29,7 @@
         height: 40px;
         color: orangered;
         font-weight: 700;
-        background-color: #EEE;
+        background-color: #f3f5f7;
         text-align: center;
         line-height: 40px;
         cursor: pointer;
