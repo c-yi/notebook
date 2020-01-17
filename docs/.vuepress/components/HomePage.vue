@@ -11,6 +11,46 @@
     </div>
 </template>
 
+<style scoped lang="scss">
+    .self_container {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+
+        .self_header {
+            background-color: rgba(255, 255, 255, .3);
+            padding: 15px 200px 0;
+            display: none;
+
+            .self_bar {
+                flex: 1;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .self_container {
+            .self_header {
+                padding: 15px 0;
+            }
+        }
+    }
+
+    a {
+        color: #8c939d;
+
+        &:hover {
+            color: orangered;
+        }
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+</style>
 <script>
     export default {
         name: 'HomePage',
@@ -45,7 +85,7 @@
                     this.hidden = setTimeout(() => {
                         container.style.display = 'none';
                         this.once = true
-                    }, 3000)
+                    }, 2000)
                 }
             },
             // 过滤导航链接
@@ -57,35 +97,3 @@
         }
     }
 </script>
-<style scoped lang="scss">
-    .self_container {
-        padding: 0;
-        margin: 0;
-        height: 100vh;
-
-        .self_header {
-            background-color: rgba(255, 255, 255, .3);
-            padding: 15px 200px 0;
-            display: none;
-
-            .self_bar {
-                flex: 1;
-            }
-        }
-    }
-
-    a {
-        color: #8c939d;
-
-        &:hover {
-            color: orangered;
-        }
-    }
-
-    ul {
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-</style>
