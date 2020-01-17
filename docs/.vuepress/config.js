@@ -14,6 +14,7 @@ module.exports = {
     },
     /*主题配置*/
     themeConfig: {
+        logo: '/image/PWA/icon-512x512.png',
         lastUpdated: '最近更新于',//最后更新时间
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
         repo: 'c-yi/notebook',
@@ -35,7 +36,7 @@ module.exports = {
     configureWebpack: {
         resolve: {
             alias: {
-                '@img': path.join(__dirname, './public/image'),
+                '@img': path.join(__dirname, './public/image')
             }
         }
     },
