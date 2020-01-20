@@ -34,7 +34,6 @@ module.exports = [
             {text: '浏览器', link: '/note/tools/browser/'},
             {text: 'linux', link: '/note/tools/linux/'},
             {text: '其他', link: '/note/others/'}
-
         ]
     }
     /*{
@@ -47,5 +46,4 @@ module.exports = [
             //{text: '联系我', link: '/contact/'},
         ]
     }*/
-
 ];
