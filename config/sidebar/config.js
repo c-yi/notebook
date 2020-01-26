@@ -15,6 +15,9 @@ module.exports = {
     ],
     tools: [
         {path: '/note/tools/', children: ['webpack', 'git', 'browser', 'linux']}
+    ],
+    develop: [
+        {path: '/note/', children: ['develop']}
     ]
 };
 

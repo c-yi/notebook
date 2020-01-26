@@ -2,7 +2,7 @@
 module.exports = [
     {text: '主页', link: '/'},
     {
-        text: '基础',
+        text: '计科基础',
         items: [
             {text: '数据结构', link: '/note/base/dataStructure/'},
             {text: '算法', link: '/note/base/algorithm/'},
@@ -11,28 +11,20 @@ module.exports = [
         ]
     },
     {
-        text: '前端',
+        text: '语言',
         items: [
-            {text: '基础', link: '/note/frontend/'},
+            {text: '前端', link: '/note/frontend/'},
             {text: '框架', link: '/note/frame/'},
-            {text: '移动端', link: '/note/app/'}
+            {text: '移动端', link: '/note/app/'},
+            {text: '后端', link: '/note/backend/'}
+
         ]
     },
     {
-        text: '后端',
+        text: '杂记',
         items: [
-            {text: 'node', link: '/note/backend/node/'},
-            {text: 'Python', link: '/note/backend/python/'},
-            {text: 'MySQL', link: '/note/backend/mysql/'}
-        ]
-    },
-    {
-        text: '工具',
-        items: [
-            {text: 'webpack', link: '/note/tools/webpack/'},
-            {text: 'Git', link: '/note/tools/git/'},
-            {text: '浏览器', link: '/note/tools/browser/'},
-            {text: 'linux', link: '/note/tools/linux/'},
+            {text: '遇到的坑', link: '/note/develop/'},
+            {text: '工具', link: '/note/tools/'},
             {text: '其他', link: '/note/others/'}
         ]
     }
