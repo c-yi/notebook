@@ -1,8 +1,8 @@
 let path = require('path'); //
 let OptimizeCss = require('optimize-css-assets-webpack-plugin'); //优化压缩 css
-let UglifyJsPlugin = require('uglifyjs-webpack-plugin'); //优化压缩 css
-const CompressionPlugin = require('compression-webpack-plugin'); // GZIP
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');//清除多余文件
+let UglifyJsPlugin = require('uglifyjs-webpack-minApp'); //优化压缩 css
+const CompressionPlugin = require('compression-webpack-minApp'); // GZIP
+const {CleanWebpackPlugin} = require('clean-webpack-minApp');//清除多余文件
 let {smart} = require('webpack-merge');
 
 let base = require('./webpack.common');

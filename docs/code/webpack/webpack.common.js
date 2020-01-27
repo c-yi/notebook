@@ -2,7 +2,7 @@ let path = require('path'); //
 let MiniCssExtractPlugin = require('mini-css-extract-plugin'); //生成link标签的形式引入到页面
 let webpack = require('webpack'); //引入webpack
 let VueLoaderPlugin = require('vue-loader/lib/plugin');
-let HtmlWebpackPlugin = require('HTML-webpack-plugin');
+let HtmlWebpackPlugin = require('HTML-webpack-minApp');
 let HappyPack = require('happypack');
 let DllReferencePlugin = require('webpack/lib/DllReferencePlugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; //檢測打包體積
@@ -47,10 +47,10 @@ module.exports = {
                 options: {
                     presets: ['@babel/preset-env',],
                     plugins: [
-                        ["@babel/plugin-proposal-decorators", {"legacy": true}],
-                        ["@babel/plugin-proposal-class-properties", {"loose": true}],
-                        "@babel/plugin-syntax-dynamic-import",
-                        "@babel/plugin-transform-runtime"
+                        ["@babel/minApp-proposal-decorators", {"legacy": true}],
+                        ["@babel/minApp-proposal-class-properties", {"loose": true}],
+                        "@babel/minApp-syntax-dynamic-import",
+                        "@babel/minApp-transform-runtime"
                     ]
                 },
             }],

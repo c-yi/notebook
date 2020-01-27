@@ -2,7 +2,7 @@ module.exports = {
     fronted: [
         {path: '/note/frontend/', children: ['JS', 'HTML', 'CSS']},
         {path: '/note/app/', children: ['flutter', 'reactNative']},
-        {path: '/note/frame/', children: ['react', 'vue', 'plugin']}
+        {path: '/note/frame/', children: ['react', 'vue', 'minApp']}
     ],
     backend: [
         {path: '/note/backend/', children: ['node', 'python', 'mysql']}

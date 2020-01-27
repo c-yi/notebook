@@ -1,6 +1,6 @@
 const path = require('path');
 const DllPlugin = require('webpack/lib/DllPlugin');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');//清除多余文件
+const {CleanWebpackPlugin} = require('clean-webpack-minApp');//清除多余文件
 module.exports = {
     // 入口文件
     mode: "production",
