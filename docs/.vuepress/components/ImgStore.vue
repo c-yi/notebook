@@ -13,7 +13,8 @@
         methods: {
             send() {
                 console.log('发送');
-                this.$axios.post('https://sm.ms/api/v2/upload_history', {username: 'c-y', password: 's88hPRpgn6vM'}).then(res => {
+                let url = 'https://sm.ms/api/v2/upload_history';
+                this.$axios.post(url).then(res => {
                     console.log(res.data);
                 })
             }

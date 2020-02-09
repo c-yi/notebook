@@ -1,7 +1,7 @@
 import './mixin'
 
-//const axios = require('./API.js');
-const axios = require('axios');
+const axios = require('./API.js');
+//const axios = require('axios');
 export default ({
                     Vue, // VuePress 正在使用的 Vue 构造函数
                     options, // 附加到根实例的一些选项
@@ -10,5 +10,4 @@ export default ({
                     isServer // 当前应用配置是处于 服务端渲染 或 客户端
                 }) => {
     Vue.prototype.$axios = axios
-
 }
