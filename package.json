@@ -27,7 +27,8 @@
     "@vuepress/plugin-nprogress": "^1.2.0",
     "@vuepress/plugin-pwa": "^1.2.0",
     "vuepress": "^1.0.1",
-    "vuepress-plugin-helper-live2d": "^1.0.0"
+    "vuepress-plugin-helper-live2d": "^1.0.0",
+    "vuepress-plugin-mathjax": "^1.2.8"
   },
   "dependencies": {
     "axios": "^0.19.2",

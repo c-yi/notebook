@@ -1,5 +1,14 @@
 module.exports = [
     '@vuepress/nprogress',
+    [
+        'vuepress-plugin-mathjax',
+        {
+            target: 'svg',
+            macros: {
+                '*': '\\times'
+            }
+        }
+    ],
     ['@vuepress/pwa', {
         serviceWorker: true,
         updatePopup: {

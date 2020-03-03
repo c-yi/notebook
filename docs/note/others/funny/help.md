@@ -1,6 +1,6 @@
+# 帮助文档
 
-# markdown
- ## Badge  <Badge text="beta" vertical="middle" type="error"/> <Badge text="默认主题"/>
+## Badge  <Badge text="beta" vertical="middle" type="error"/> <Badge text="默认主题"/>
  - text - string
  - type - string, 可选值： "tip"|"warning"|"error"，默认值是： "tip"
  - vertical - string, 可选值： "top"|"middle"，默认值是： "top"
@@ -8,19 +8,25 @@
 ## Badge  <Badge text="beta" vertical="middle" type="error"/> <Badge text="默认主题"/>
 ```
 ## 自定义容器
+``` 
+    ::: tip 提示
+    这是一个提示
+    :::
+```
 
-::: tip
+::: tip 提示
 这是一个提示
 :::
 
-::: warning
+::: warning 警告
 这是一个警告
 :::
 
-::: danger
+::: danger 危险
 这是一个危险警告
 :::
 
+## 数学公式
 
 假设 $y >= 0$ , 而 $[\log x]$ 表示 $\log x$ 的整数部分, 设:
 
@@ -30,4 +36,4 @@ $$\Phi (y) = \frac {1} {2 \pi i} \int_{2 - i \infty}^{2 + i \infty} \frac {y^{\o
 
 当 $\log x>= 10^4$ 及 $y>= e^{2{(\log x)}^{-0.1}}$ 时， 则有:
 
-$$1 - x^{- 0.1} <= \Phi (y) <= 1
+$$1 - x^{- 0.1} <= \Phi (y) <= 1$$
