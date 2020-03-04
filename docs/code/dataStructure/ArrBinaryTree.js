@@ -35,15 +35,19 @@ class ArrBinaryTree {
         if (this.root[index]) {
             console.log(this.root[index]);
         }
+
         let left = 2 * index + 1;
         let right = 2 * index + 2;
-        let length = this.root.length;
-        if (this.root[left] !== null && left <= length) {
-            this._preOrder(left)
+        if (this.root[left] !== null && this.root[right] !== null) {
+           let length = this.root.length;
+            if (left <= length) {
+                this._preOrder(left)
+            }
+            if ((right <= length)) {
+                this._preOrder(right)
+            }
         }
-        if (this.root[right] !== null && (right <= length)) {
-            this._preOrder(right)
-        }
+
     }
 
     preOrder() {
@@ -56,7 +60,7 @@ class ArrBinaryTree {
 }
 
 let arr = new ArrBinaryTree();
-let n = 30;
+let n = 10;
 for (let i = 0; i < n; i++) {
     arr.add(Math.floor(Math.random() * 10 * n))
 }
