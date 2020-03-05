@@ -83,4 +83,5 @@ str.split('').forEach(v => {
 /**/
 console.log(huffmanTable);
 console.log(HuffmanCode);
-
+//10001111(补码)=>10001110(反码,符号位不变,减一)=>11110001(源码)
+console.log(parseInt(10001111,2));
