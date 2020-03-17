@@ -25,7 +25,6 @@ function patchData(preVal, nextVal, key, el) {
       }
       for (let k in preVal) {
         if (nextVal&&!nextVal.hasOwnProperty(k)) {
-          console.log('该救治');
           el.style[k] = ''
         }
       }

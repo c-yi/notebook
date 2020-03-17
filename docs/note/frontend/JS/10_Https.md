@@ -9,9 +9,11 @@
 ## 区别
 简而言之，HTTPS 就是在 HTTP 下加入了 SSL 层(TLS 是 SSL 的升级版本)，从而保护了交换数据隐私和完整性，
 提供对网站服务器身份认证的功能，简单来说它就是安全版的 HTTP。
-![MVC-MVVM](~@img/http.png)
+![http](~@img/http.png)
 
 ## 加密 
+
+![加密](~@img/httpsEncryption.jpg)
 
 >那么加密的信息通道又加密了哪些信息呢
 
