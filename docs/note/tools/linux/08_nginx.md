@@ -16,11 +16,7 @@
 
 ### 负载均衡
 
-![1581401504217](C:\Users\程燚\AppData\Roaming\Typora\typora-user-images\1581401504217.png)
-
 ### 动静分离
-
-![1581401808648](C:\Users\程燚\AppData\Roaming\Typora\typora-user-images\1581401808648.png)
 
 ### 高可用
 

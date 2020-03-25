@@ -13,26 +13,26 @@
 
 <ShowCode>
 <<< @/docs/code/koa/context.js
-</ShowCode> 
+</ShowCode>
 
 ### request
 
 <ShowCode>
-<<< @/docs/code/koa/request
-</ShowCode> 
+<<< @/docs/code/koa/request.js
+</ShowCode>
 
 ### response
 
 <ShowCode>
 <<< @/docs/code/koa/response.js
-</ShowCode> 
+</ShowCode>
 
 ## compose <Badge vertical='middle' text="核心" type="error"/>
 > 洋葱模型的实现 - 中间件原理
 
 >接收一个子元素为函数的数组,然后循环遍历该数组,  
 如果该元素是一个函数,且拥有next() 参数  
-就 return Promise(next) 否则 return Promise() 
+就 return Promise(next) 否则 return Promise()
 
 <ShowCode>
 <<< @/docs/code/koa/composeSample.js

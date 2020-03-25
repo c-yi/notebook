@@ -2,6 +2,20 @@
 
 ## 配置
 
+1. 运行当个ts 文件
+
+   ```text
+   配置webstorm
+   点击右上角打开Run/Debug Configurations选项卡
+   在Node Parameters输入框添加 
+   	--require ts-node/register
+   	(如果全局安装需要写全局路径否则会报错) Cannot find module ‘ts-node/register’
+   然后在JavaScript file 添加
+   	$FilePathRelativeToProjectRoot$
+   ```
+
+2. 
+
 > file watchers
 
 + Program：‪C:\Users\name\AppData\Roaming\npm\tsc.cmd
