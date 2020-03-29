@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>多表查询 | Blog Note</title>
+    <meta name="description" content="Just playing around">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/notebook/image/PWA/icon-128x128.png">
+  <link rel="apple-touch-icon" href="/notebook/image/PWA/icon-128x128.png">
+  <link rel="manifest" href="/notebook/manifest.json">
+  <link rel="theme" content="#FFFFFF">
+    
+    <link rel="preload" href="/notebook/assets/css/0.styles.2780c180.css" as="style"><link rel="preload" href="/notebook/assets/js/app.5b743b3d.js" as="script"><link rel="preload" href="/notebook/assets/js/2.5a190a38.js" as="script"><link rel="preload" href="/notebook/assets/js/44.1324d90c.js" as="script"><link rel="preload" href="/notebook/assets/js/10.996aadc4.js" as="script"><link rel="prefetch" href="/notebook/assets/js/100.4162c49e.js"><link rel="prefetch" href="/notebook/assets/js/101.675afa13.js"><link rel="prefetch" href="/notebook/assets/js/102.3dcf49f6.js"><link rel="prefetch" href="/notebook/assets/js/103.8b2eb3e8.js"><link rel="prefetch" href="/notebook/assets/js/104.3d483aed.js"><link rel="prefetch" href="/notebook/assets/js/105.2f869c10.js"><link rel="prefetch" href="/notebook/assets/js/106.a675d60a.js"><link rel="prefetch" href="/notebook/assets/js/107.c0849254.js"><link rel="prefetch" href="/notebook/assets/js/108.c90aa6ac.js"><link rel="prefetch" href="/notebook/assets/js/109.e5c27bf4.js"><link rel="prefetch" href="/notebook/assets/js/11.30b20ddb.js"><link rel="prefetch" href="/notebook/assets/js/110.67983a88.js"><link rel="prefetch" href="/notebook/assets/js/111.bf1b30e8.js"><link rel="prefetch" href="/notebook/assets/js/112.c822d78c.js"><link rel="prefetch" href="/notebook/assets/js/113.c18b5f89.js"><link rel="prefetch" href="/notebook/assets/js/114.8a218373.js"><link rel="prefetch" href="/notebook/assets/js/115.d77c4669.js"><link rel="prefetch" href="/notebook/assets/js/116.1bc60bdd.js"><link rel="prefetch" href="/notebook/assets/js/117.4227ed4f.js"><link rel="prefetch" href="/notebook/assets/js/118.d987b8ec.js"><link rel="prefetch" href="/notebook/assets/js/119.3228c591.js"><link rel="prefetch" href="/notebook/assets/js/12.70ad555c.js"><link rel="prefetch" href="/notebook/assets/js/120.6eabe999.js"><link rel="prefetch" href="/notebook/assets/js/121.690a1434.js"><link rel="prefetch" href="/notebook/assets/js/122.1ea0585c.js"><link rel="prefetch" href="/notebook/assets/js/123.080ce91b.js"><link rel="prefetch" href="/notebook/assets/js/124.aafaca19.js"><link rel="prefetch" href="/notebook/assets/js/125.88a77240.js"><link rel="prefetch" href="/notebook/assets/js/126.c89543c1.js"><link rel="prefetch" href="/notebook/assets/js/127.846ad094.js"><link rel="prefetch" href="/notebook/assets/js/128.663b8ca6.js"><link rel="prefetch" href="/notebook/assets/js/129.5030a1b6.js"><link rel="prefetch" href="/notebook/assets/js/13.dcec235f.js"><link rel="prefetch" href="/notebook/assets/js/130.50d05092.js"><link rel="prefetch" href="/notebook/assets/js/131.92790e24.js"><link rel="prefetch" href="/notebook/assets/js/132.8551a1f0.js"><link rel="prefetch" href="/notebook/assets/js/133.4596d152.js"><link rel="prefetch" href="/notebook/assets/js/134.eec455bb.js"><link rel="prefetch" href="/notebook/assets/js/135.df697c1d.js"><link rel="prefetch" href="/notebook/assets/js/136.5311ccfd.js"><link rel="prefetch" href="/notebook/assets/js/137.b4699437.js"><link rel="prefetch" href="/notebook/assets/js/138.d95b906a.js"><link rel="prefetch" href="/notebook/assets/js/139.96475758.js"><link rel="prefetch" href="/notebook/assets/js/14.7599f488.js"><link rel="prefetch" href="/notebook/assets/js/140.900ccd18.js"><link rel="prefetch" href="/notebook/assets/js/141.76084cbe.js"><link rel="prefetch" href="/notebook/assets/js/142.6b6a25ff.js"><link rel="prefetch" href="/notebook/assets/js/143.d6fcb782.js"><link rel="prefetch" href="/notebook/assets/js/144.4ba4cb3b.js"><link rel="prefetch" href="/notebook/assets/js/145.1d7ed115.js"><link rel="prefetch" href="/notebook/assets/js/146.4ef35055.js"><link rel="prefetch" href="/notebook/assets/js/147.608a0e17.js"><link rel="prefetch" href="/notebook/assets/js/148.0e07035a.js"><link rel="prefetch" href="/notebook/assets/js/149.74f6ed82.js"><link rel="prefetch" href="/notebook/assets/js/15.e3accbe9.js"><link rel="prefetch" href="/notebook/assets/js/150.edfab1a0.js"><link rel="prefetch" href="/notebook/assets/js/151.44c43916.js"><link rel="prefetch" href="/notebook/assets/js/152.a6bbb2bb.js"><link rel="prefetch" href="/notebook/assets/js/153.896ecd2e.js"><link rel="prefetch" href="/notebook/assets/js/154.9d9888b7.js"><link rel="prefetch" href="/notebook/assets/js/155.0bf19dce.js"><link rel="prefetch" href="/notebook/assets/js/156.827990e4.js"><link rel="prefetch" href="/notebook/assets/js/157.ac99d1c4.js"><link rel="prefetch" href="/notebook/assets/js/158.3956d464.js"><link rel="prefetch" href="/notebook/assets/js/159.2a590ce5.js"><link rel="prefetch" href="/notebook/assets/js/16.625a9414.js"><link rel="prefetch" href="/notebook/assets/js/160.e28c9388.js"><link rel="prefetch" href="/notebook/assets/js/161.ddd91662.js"><link rel="prefetch" href="/notebook/assets/js/162.ab62bfae.js"><link rel="prefetch" href="/notebook/assets/js/163.abbc5b04.js"><link rel="prefetch" href="/notebook/assets/js/164.bf31117f.js"><link rel="prefetch" href="/notebook/assets/js/165.dd560c76.js"><link rel="prefetch" href="/notebook/assets/js/166.d64a1496.js"><link rel="prefetch" href="/notebook/assets/js/167.8924a84c.js"><link rel="prefetch" href="/notebook/assets/js/168.762be210.js"><link rel="prefetch" href="/notebook/assets/js/169.02347ce6.js"><link rel="prefetch" href="/notebook/assets/js/17.e052aba2.js"><link rel="prefetch" href="/notebook/assets/js/170.344bc81f.js"><link rel="prefetch" href="/notebook/assets/js/171.0b06bad0.js"><link rel="prefetch" href="/notebook/assets/js/172.957ba2f2.js"><link rel="prefetch" href="/notebook/assets/js/173.7eefcee6.js"><link rel="prefetch" href="/notebook/assets/js/174.5963c9e8.js"><link rel="prefetch" href="/notebook/assets/js/175.f4bd19b3.js"><link rel="prefetch" href="/notebook/assets/js/176.e5aae9b8.js"><link rel="prefetch" href="/notebook/assets/js/177.753a7150.js"><link rel="prefetch" href="/notebook/assets/js/178.700ebe0a.js"><link rel="prefetch" href="/notebook/assets/js/179.33b10ecd.js"><link rel="prefetch" href="/notebook/assets/js/18.cd7552b2.js"><link rel="prefetch" href="/notebook/assets/js/180.39eb3869.js"><link rel="prefetch" href="/notebook/assets/js/19.44006621.js"><link rel="prefetch" href="/notebook/assets/js/20.3f76f59e.js"><link rel="prefetch" href="/notebook/assets/js/21.1c512f1e.js"><link rel="prefetch" href="/notebook/assets/js/22.0869447f.js"><link rel="prefetch" href="/notebook/assets/js/23.0bf54841.js"><link rel="prefetch" href="/notebook/assets/js/24.9b5123a4.js"><link rel="prefetch" href="/notebook/assets/js/25.76caf35f.js"><link rel="prefetch" href="/notebook/assets/js/26.0fd928ea.js"><link rel="prefetch" href="/notebook/assets/js/27.21644d61.js"><link rel="prefetch" href="/notebook/assets/js/28.ffbc80a1.js"><link rel="prefetch" href="/notebook/assets/js/29.4941c79b.js"><link rel="prefetch" href="/notebook/assets/js/3.6b735fd9.js"><link rel="prefetch" href="/notebook/assets/js/30.f78b69cf.js"><link rel="prefetch" href="/notebook/assets/js/31.57da179b.js"><link rel="prefetch" href="/notebook/assets/js/32.f4f294a3.js"><link rel="prefetch" href="/notebook/assets/js/33.9d4ed1a3.js"><link rel="prefetch" href="/notebook/assets/js/34.8df29565.js"><link rel="prefetch" href="/notebook/assets/js/35.d1683813.js"><link rel="prefetch" href="/notebook/assets/js/36.ab5fb31e.js"><link rel="prefetch" href="/notebook/assets/js/37.38881015.js"><link rel="prefetch" href="/notebook/assets/js/38.4fba4911.js"><link rel="prefetch" href="/notebook/assets/js/39.e2732399.js"><link rel="prefetch" href="/notebook/assets/js/4.15df75ff.js"><link rel="prefetch" href="/notebook/assets/js/40.46f89a35.js"><link rel="prefetch" href="/notebook/assets/js/41.32e84631.js"><link rel="prefetch" href="/notebook/assets/js/42.a120a61d.js"><link rel="prefetch" href="/notebook/assets/js/43.b8b3dea0.js"><link rel="prefetch" href="/notebook/assets/js/45.4522649e.js"><link rel="prefetch" href="/notebook/assets/js/46.599ac356.js"><link rel="prefetch" href="/notebook/assets/js/47.83af9820.js"><link rel="prefetch" href="/notebook/assets/js/48.56b22dd4.js"><link rel="prefetch" href="/notebook/assets/js/49.5a59a9d9.js"><link rel="prefetch" href="/notebook/assets/js/5.e9546050.js"><link rel="prefetch" href="/notebook/assets/js/50.ce5c2e53.js"><link rel="prefetch" href="/notebook/assets/js/51.92e9d2a1.js"><link rel="prefetch" href="/notebook/assets/js/52.b2729120.js"><link rel="prefetch" href="/notebook/assets/js/53.48380f3b.js"><link rel="prefetch" href="/notebook/assets/js/54.c3d91512.js"><link rel="prefetch" href="/notebook/assets/js/55.5f30883f.js"><link rel="prefetch" href="/notebook/assets/js/56.2b2b9c59.js"><link rel="prefetch" href="/notebook/assets/js/57.d5256c84.js"><link rel="prefetch" href="/notebook/assets/js/58.9f8c9a60.js"><link rel="prefetch" href="/notebook/assets/js/59.2bc777df.js"><link rel="prefetch" href="/notebook/assets/js/6.8628b954.js"><link rel="prefetch" href="/notebook/assets/js/60.07b3a0bf.js"><link rel="prefetch" href="/notebook/assets/js/61.e0e63333.js"><link rel="prefetch" href="/notebook/assets/js/62.049ceef2.js"><link rel="prefetch" href="/notebook/assets/js/63.14826e2f.js"><link rel="prefetch" href="/notebook/assets/js/64.1edaf80b.js"><link rel="prefetch" href="/notebook/assets/js/65.cf738bf7.js"><link rel="prefetch" href="/notebook/assets/js/66.b6f64760.js"><link rel="prefetch" href="/notebook/assets/js/67.a48c2cc0.js"><link rel="prefetch" href="/notebook/assets/js/68.fe1893f5.js"><link rel="prefetch" href="/notebook/assets/js/69.a5e08e15.js"><link rel="prefetch" href="/notebook/assets/js/7.b2201f04.js"><link rel="prefetch" href="/notebook/assets/js/70.ec911aa1.js"><link rel="prefetch" href="/notebook/assets/js/71.f27185dd.js"><link rel="prefetch" href="/notebook/assets/js/72.474c1bd6.js"><link rel="prefetch" href="/notebook/assets/js/73.5ecba00d.js"><link rel="prefetch" href="/notebook/assets/js/74.3a0e8699.js"><link rel="prefetch" href="/notebook/assets/js/75.4beebb02.js"><link rel="prefetch" href="/notebook/assets/js/76.88eafca2.js"><link rel="prefetch" href="/notebook/assets/js/77.b48607cd.js"><link rel="prefetch" href="/notebook/assets/js/78.e09e23cb.js"><link rel="prefetch" href="/notebook/assets/js/79.47046879.js"><link rel="prefetch" href="/notebook/assets/js/8.954d4587.js"><link rel="prefetch" href="/notebook/assets/js/80.4d6aafb1.js"><link rel="prefetch" href="/notebook/assets/js/81.8ec9147f.js"><link rel="prefetch" href="/notebook/assets/js/82.f76d2e7f.js"><link rel="prefetch" href="/notebook/assets/js/83.596f0ca9.js"><link rel="prefetch" href="/notebook/assets/js/84.baccf8ec.js"><link rel="prefetch" href="/notebook/assets/js/85.eb8d9429.js"><link rel="prefetch" href="/notebook/assets/js/86.b963062c.js"><link rel="prefetch" href="/notebook/assets/js/87.6e9e5d18.js"><link rel="prefetch" href="/notebook/assets/js/88.8f8e98d5.js"><link rel="prefetch" href="/notebook/assets/js/89.65a000f9.js"><link rel="prefetch" href="/notebook/assets/js/9.d2e6b08c.js"><link rel="prefetch" href="/notebook/assets/js/90.ca547bf9.js"><link rel="prefetch" href="/notebook/assets/js/91.880afc80.js"><link rel="prefetch" href="/notebook/assets/js/92.a3f203b6.js"><link rel="prefetch" href="/notebook/assets/js/93.bafee662.js"><link rel="prefetch" href="/notebook/assets/js/94.a2ff30a5.js"><link rel="prefetch" href="/notebook/assets/js/95.54e66985.js"><link rel="prefetch" href="/notebook/assets/js/96.e2621b07.js"><link rel="prefetch" href="/notebook/assets/js/97.b9590b19.js"><link rel="prefetch" href="/notebook/assets/js/98.8ee8814d.js"><link rel="prefetch" href="/notebook/assets/js/99.a1f6adb4.js">
+    <link rel="stylesheet" href="/notebook/assets/css/0.styles.2780c180.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notebook/" class="home-link router-link-active"><img src="/notebook/image/PWA/icon-512x512.png" alt="Blog Note" class="logo"> <span class="site-name can-hide">Blog Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/notebook/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计科基础" class="dropdown-title"><span class="title">计科基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/base/dataStructure/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/designPattern/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/network/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/frontend/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/frame/" class="nav-link">
+  框架
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/app/" class="nav-link">
+  移动端
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/backend/" class="nav-link router-link-active">
+  后端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂记" class="dropdown-title"><span class="title">杂记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/develop/" class="nav-link">
+  遇到的坑
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/others/" class="nav-link">
+  其他
+</a></li></ul></div></div> <a href="https://github.com/c-yi/notebook" target="_blank" rel="noopener noreferrer" class="repo-link">
+    github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/notebook/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计科基础" class="dropdown-title"><span class="title">计科基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/base/dataStructure/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/designPattern/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/network/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/frontend/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/frame/" class="nav-link">
+  框架
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/app/" class="nav-link">
+  移动端
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/backend/" class="nav-link router-link-active">
+  后端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂记" class="dropdown-title"><span class="title">杂记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/develop/" class="nav-link">
+  遇到的坑
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/others/" class="nav-link">
+  其他
+</a></li></ul></div></div> <a href="https://github.com/c-yi/notebook" target="_blank" rel="noopener noreferrer" class="repo-link">
+    github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>node</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>python</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>mysql</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notebook/note/backend/mysql/" class="sidebar-link">数据库</a></li><li><a href="/notebook/note/backend/mysql/01_库操作.html" class="sidebar-link">库操作</a></li><li><a href="/notebook/note/backend/mysql/02_表操作.html" class="sidebar-link">表操作</a></li><li><a href="/notebook/note/backend/mysql/03_数据操作.html" class="sidebar-link">数据操作</a></li><li><a href="/notebook/note/backend/mysql/04_字符集,校对集.html" class="sidebar-link">字符集 / 校对集</a></li><li><a href="/notebook/note/backend/mysql/05_字段类型.html" class="sidebar-link">字段类型</a></li><li><a href="/notebook/note/backend/mysql/06_属性.html" class="sidebar-link">属性</a></li><li><a href="/notebook/note/backend/mysql/07_三大范式.html" class="sidebar-link">设计表</a></li><li><a href="/notebook/note/backend/mysql/08_增删改查.html" class="sidebar-link">高级操作</a></li><li><a href="/notebook/note/backend/mysql/08_数据库备份与还原.html" class="sidebar-link">数据库备份与还原</a></li><li><a href="/notebook/note/backend/mysql/10_多表查询.html" class="active sidebar-link">多表查询</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/10_多表查询.html#联合查询" class="sidebar-link">联合查询</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/10_多表查询.html#联合查询排序" class="sidebar-link">联合查询排序</a></li></ul></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/10_多表查询.html#连表查询" class="sidebar-link">连表查询</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/10_多表查询.html#交叉连接" class="sidebar-link">交叉连接</a></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/10_多表查询.html#内连接" class="sidebar-link">内连接</a></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/10_多表查询.html#外连接" class="sidebar-link">外连接</a></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/10_多表查询.html#自然连接" class="sidebar-link">自然连接</a></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/10_多表查询.html#using-关键字" class="sidebar-link">using 关键字</a></li></ul></li></ul></li><li><a href="/notebook/note/backend/mysql/11_子查询.html" class="sidebar-link">子查询</a></li><li><a href="/notebook/note/backend/mysql/11外键.html" class="sidebar-link">外键</a></li><li><a href="/notebook/note/backend/mysql/12_事务.html" class="sidebar-link">事务</a></li><li><a href="/notebook/note/backend/mysql/13_用户管理和权限管理.html" class="sidebar-link">用户管理和权限管理</a></li><li><a href="/notebook/note/backend/mysql/14_视图.html" class="sidebar-link">视图</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="多表查询"><a href="#多表查询" class="header-anchor">#</a> 多表查询</h1> <h2 id="联合查询"><a href="#联合查询" class="header-anchor">#</a> 联合查询</h2> <p>联合查询: union,是指将多个查询结果合并成一个结果显示
+联合查询是针对查询结果的合并(多条select语句合并)</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code># 联合查询语法 union默认是去重的
+select 查询
+ union 查询选项 [all distinct]
+select 查询
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><div class="language-mysql line-numbers-mode"><pre class="language-text"><code># 创建一个新表
+
+create table t 42 like t 40:
+
+insert into t_42 values (null,'犬夜叉','男',200,'神妖1班'),
+(null,'日暮戈薇','女',16,'现代1班'),
+(null,'桔梗','女',88,'法师1班'),
+(null,'弥勒','男',28,'法师2班'),
+(null,'珊瑚','女',20,'法师2班'),
+(null,'七宝','保密',15,'宠物1班'),
+(null,'杀生丸','男',220,'神妖1班'),
+(null,'铃','女',4,'现代1班'),
+(null,'钢牙','男',68,'神妖1班'),
+(null,'奈落','男',255,'神妖1班'),
+(null,'神乐','女',15,'神妖2班');
+
+# e.g union默认是去重的
+select * from t_40
+ union all 
+select * from t_42;
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h3 id="联合查询排序"><a href="#联合查询排序" class="header-anchor">#</a> 联合查询排序</h3> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>#对的是整个 union之后的结果
+1、将t_40和t_42表的结果使用年龄降序排序
+select from t_40
+union all
+select from t_42
+order by age desc;
+
+# 2. 对每个表排序
+(select from t_40 order by age desc limit 99999)
+union
+(select from t_42 order by age desc limit 99999);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="连表查询"><a href="#连表查询" class="header-anchor">#</a> 连表查询</h2> <p>连接查询:join,将两张表依据某个条件进行数据拼接
+join左右各一张表:join关键字左边的表叫左表,右边的表叫右表
+连接查询的结果都是记录会保留左右表的所有字段(字段拼接
+具体字段数据依据査询需求确定
+表字段冲突需要使用表别名和字段别名区分
+不同的连表有不同的连接方式,对于结果的处理也不尽相同
+连接查询不限定表的数量,可以进行多表连接,只是表的连接需要一个一个的连( A join B join C…)
+小结
+1、连接査询就是通过字段拼接,把两张表的记录变成一条记录:字段数量增加
+2、连接查询的目的是将分散在不同表的数据组合到一起,方便外部使用数据</p> <h3 id="交叉连接"><a href="#交叉连接" class="header-anchor">#</a> 交叉连接</h3> <p>交叉连接: cross join,不需要连接条件的连接
+交叉连接产生的结果就是笛卡尔积
+左表的每一条记录都会与右表的所有记录连接并保留
+交叉连接没有实际数据价值,只是丰富了连接査询的完整性</p> <h3 id="内连接"><a href="#内连接" class="header-anchor">#</a> 内连接</h3> <p>内连接: inner join,将两张表根据指定的条件连接起来,严格连接<br>
+内连接是将一张表的每条记录去另外张表根据条件匹配</p> <ul><li>匹配成功:保留连接的数据</li> <li>匹配失败:都不保留</li></ul> <p>内连接语 法:<code>左表 join 右表 on 连接条件</code></p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>1、设计学生表和专业表:学生对专业多对一关系
+#学生表
+create table t_43(
+	id int primary key auto_increment,
+	name varchar(50) not null,
+	course_no int
+)charset utf8;
+
+insert into t_43 values (null, 'student1', 1),
+(null, 'student2', 1),
+(null, 'student3', 2),
+(null, 'student4', 3),
+(null, 'student5', 1),
+(null, 'student6', default);
+#专业表
+create table t_44(
+	id int primary key auto_increment,
+	name varchar (50) not null unique
+)charset utf8;
+
+insert into t_44 values(null, 'Computer' ),(null, 'Software'),(null, 'Network');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>2、获取已经选择了专业的学生信息,包括所选专业</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>#学生和专业在两个表中,所以需要连表
+#学生必须有专业,而专业也必须存在,所以是内连接
+#连接条件:专业编号
+#两张表有两个字段冲突:id、name,所以需要使用别名
+select t_43.*,t_44.name as course_name from t_43 inner join t_44 on t_43.course_no = t_44.id ;
+
+#表名的使用也可以使用别名
+select s.*, C.name as c_name from t_43 as s inner join t_44 as  c on s.course_no = c.id;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="外连接"><a href="#外连接" class="header-anchor">#</a> 外连接</h3> <p>外连接: outer join,是一种不严格的连接方式</p> <ul><li>外连接分为两种
+<ul><li>左外连接(左连接): left join</li> <li>右外连接(右连接): right join</li></ul></li> <li>外连接有主表和从表之分
+<ul><li>左连接:在表为主表</li> <li>右连接:右表为主表</li></ul></li> <li>外连接是<strong>将主表的记录去匹配从表的记录</strong> <ul><li>匹配成功保留</li> <li>匹配失败(全表):也保留, 只是从表字段置空</li></ul></li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>1、查出所有的学生信息,包括所在班级(左连接)
+#主要数据是学生,而且是全部学生:外连接、且学生表是主表
+select s.* ,c.name c_name from t_43 s left join t_44 c on s course_no = c.id;
+
+2、查出所有班级里的所有学生(右连接)
+#主表是班级
+select s.* ,c.name c_name from t_43 s right join t_44 c on s course_no = c.id;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="自然连接"><a href="#自然连接" class="header-anchor">#</a> 自然连接</h3> <p>概念 自然连接: natural join,是一种自动寻找连接条件的连接查询</p> <p>自然连接不是一种特殊的连接方式,而是一种自动匹配条件的连接</p> <ul><li>自然连接包含自然内连接和自然外连接
+<ul><li>自然内连接: natural join</li> <li>自然外连接: natural left/right join</li></ul></li> <li>自然连接条件匹配模式:自动寻找相同字段名作为连接条件(字段名相同)</li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>select * from t_43 natural join t_44;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="using-关键字"><a href="#using-关键字" class="header-anchor">#</a> using 关键字</h3> <p>using关键字 : 连接查询时如果是同名字段作为连接条件, using可以代替on出现(比on更好)</p> <ul><li>using 是针对同名字段(using(id)===A.id=B.id)</li> <li>using 关键字使用后会自动合并对应字段为一个</li> <li>using 可以同时使用多个字段作为条件</li></ul> <p>using 关键字用来简化同名条件字段的连接条件行为
+using 关键字与自然连接相似,但是比自然连接灵活,可以指定有效的同名连接条件,忽略无效的同名字段</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>select s.*, c.c_name from t_45 as s left join t_46 as c using(c_id);
+select * from t_45 as s left join t_46 as c using(c_id);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/c-yi/notebook/edit/master/docs/note/backend/mysql/10_多表查询.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">最近更新于:</span> <span class="time">2/18/2020, 9:36:02 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notebook/note/backend/mysql/08_数据库备份与还原.html" class="prev">
+        数据库备份与还原
+      </a></span> <span class="next"><a href="/notebook/note/backend/mysql/11_子查询.html">
+        子查询
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;left:240px;bottom:0px;width:135px;height:300px;z-index:99999;opacity:1;pointer-events:none;"><canvas id="live2dcanvas" width="135" height="300" class="live2dcanvas" style="position:absolute;left:0px;top:0px;width:135px;height:300px;"></canvas></div></div></div>
+    <script src="/notebook/assets/js/app.5b743b3d.js" defer></script><script src="/notebook/assets/js/2.5a190a38.js" defer></script><script src="/notebook/assets/js/44.1324d90c.js" defer></script><script src="/notebook/assets/js/10.996aadc4.js" defer></script>
+  </body>
+</html>

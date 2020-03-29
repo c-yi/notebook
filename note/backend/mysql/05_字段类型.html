@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>字段类型 | Blog Note</title>
+    <meta name="description" content="Just playing around">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/notebook/image/PWA/icon-128x128.png">
+  <link rel="apple-touch-icon" href="/notebook/image/PWA/icon-128x128.png">
+  <link rel="manifest" href="/notebook/manifest.json">
+  <link rel="theme" content="#FFFFFF">
+    
+    <link rel="preload" href="/notebook/assets/css/0.styles.2780c180.css" as="style"><link rel="preload" href="/notebook/assets/js/app.5b743b3d.js" as="script"><link rel="preload" href="/notebook/assets/js/2.5a190a38.js" as="script"><link rel="preload" href="/notebook/assets/js/39.e2732399.js" as="script"><link rel="preload" href="/notebook/assets/js/10.996aadc4.js" as="script"><link rel="prefetch" href="/notebook/assets/js/100.4162c49e.js"><link rel="prefetch" href="/notebook/assets/js/101.675afa13.js"><link rel="prefetch" href="/notebook/assets/js/102.3dcf49f6.js"><link rel="prefetch" href="/notebook/assets/js/103.8b2eb3e8.js"><link rel="prefetch" href="/notebook/assets/js/104.3d483aed.js"><link rel="prefetch" href="/notebook/assets/js/105.2f869c10.js"><link rel="prefetch" href="/notebook/assets/js/106.a675d60a.js"><link rel="prefetch" href="/notebook/assets/js/107.c0849254.js"><link rel="prefetch" href="/notebook/assets/js/108.c90aa6ac.js"><link rel="prefetch" href="/notebook/assets/js/109.e5c27bf4.js"><link rel="prefetch" href="/notebook/assets/js/11.30b20ddb.js"><link rel="prefetch" href="/notebook/assets/js/110.67983a88.js"><link rel="prefetch" href="/notebook/assets/js/111.bf1b30e8.js"><link rel="prefetch" href="/notebook/assets/js/112.c822d78c.js"><link rel="prefetch" href="/notebook/assets/js/113.c18b5f89.js"><link rel="prefetch" href="/notebook/assets/js/114.8a218373.js"><link rel="prefetch" href="/notebook/assets/js/115.d77c4669.js"><link rel="prefetch" href="/notebook/assets/js/116.1bc60bdd.js"><link rel="prefetch" href="/notebook/assets/js/117.4227ed4f.js"><link rel="prefetch" href="/notebook/assets/js/118.d987b8ec.js"><link rel="prefetch" href="/notebook/assets/js/119.3228c591.js"><link rel="prefetch" href="/notebook/assets/js/12.70ad555c.js"><link rel="prefetch" href="/notebook/assets/js/120.6eabe999.js"><link rel="prefetch" href="/notebook/assets/js/121.690a1434.js"><link rel="prefetch" href="/notebook/assets/js/122.1ea0585c.js"><link rel="prefetch" href="/notebook/assets/js/123.080ce91b.js"><link rel="prefetch" href="/notebook/assets/js/124.aafaca19.js"><link rel="prefetch" href="/notebook/assets/js/125.88a77240.js"><link rel="prefetch" href="/notebook/assets/js/126.c89543c1.js"><link rel="prefetch" href="/notebook/assets/js/127.846ad094.js"><link rel="prefetch" href="/notebook/assets/js/128.663b8ca6.js"><link rel="prefetch" href="/notebook/assets/js/129.5030a1b6.js"><link rel="prefetch" href="/notebook/assets/js/13.dcec235f.js"><link rel="prefetch" href="/notebook/assets/js/130.50d05092.js"><link rel="prefetch" href="/notebook/assets/js/131.92790e24.js"><link rel="prefetch" href="/notebook/assets/js/132.8551a1f0.js"><link rel="prefetch" href="/notebook/assets/js/133.4596d152.js"><link rel="prefetch" href="/notebook/assets/js/134.eec455bb.js"><link rel="prefetch" href="/notebook/assets/js/135.df697c1d.js"><link rel="prefetch" href="/notebook/assets/js/136.5311ccfd.js"><link rel="prefetch" href="/notebook/assets/js/137.b4699437.js"><link rel="prefetch" href="/notebook/assets/js/138.d95b906a.js"><link rel="prefetch" href="/notebook/assets/js/139.96475758.js"><link rel="prefetch" href="/notebook/assets/js/14.7599f488.js"><link rel="prefetch" href="/notebook/assets/js/140.900ccd18.js"><link rel="prefetch" href="/notebook/assets/js/141.76084cbe.js"><link rel="prefetch" href="/notebook/assets/js/142.6b6a25ff.js"><link rel="prefetch" href="/notebook/assets/js/143.d6fcb782.js"><link rel="prefetch" href="/notebook/assets/js/144.4ba4cb3b.js"><link rel="prefetch" href="/notebook/assets/js/145.1d7ed115.js"><link rel="prefetch" href="/notebook/assets/js/146.4ef35055.js"><link rel="prefetch" href="/notebook/assets/js/147.608a0e17.js"><link rel="prefetch" href="/notebook/assets/js/148.0e07035a.js"><link rel="prefetch" href="/notebook/assets/js/149.74f6ed82.js"><link rel="prefetch" href="/notebook/assets/js/15.e3accbe9.js"><link rel="prefetch" href="/notebook/assets/js/150.edfab1a0.js"><link rel="prefetch" href="/notebook/assets/js/151.44c43916.js"><link rel="prefetch" href="/notebook/assets/js/152.a6bbb2bb.js"><link rel="prefetch" href="/notebook/assets/js/153.896ecd2e.js"><link rel="prefetch" href="/notebook/assets/js/154.9d9888b7.js"><link rel="prefetch" href="/notebook/assets/js/155.0bf19dce.js"><link rel="prefetch" href="/notebook/assets/js/156.827990e4.js"><link rel="prefetch" href="/notebook/assets/js/157.ac99d1c4.js"><link rel="prefetch" href="/notebook/assets/js/158.3956d464.js"><link rel="prefetch" href="/notebook/assets/js/159.2a590ce5.js"><link rel="prefetch" href="/notebook/assets/js/16.625a9414.js"><link rel="prefetch" href="/notebook/assets/js/160.e28c9388.js"><link rel="prefetch" href="/notebook/assets/js/161.ddd91662.js"><link rel="prefetch" href="/notebook/assets/js/162.ab62bfae.js"><link rel="prefetch" href="/notebook/assets/js/163.abbc5b04.js"><link rel="prefetch" href="/notebook/assets/js/164.bf31117f.js"><link rel="prefetch" href="/notebook/assets/js/165.dd560c76.js"><link rel="prefetch" href="/notebook/assets/js/166.d64a1496.js"><link rel="prefetch" href="/notebook/assets/js/167.8924a84c.js"><link rel="prefetch" href="/notebook/assets/js/168.762be210.js"><link rel="prefetch" href="/notebook/assets/js/169.02347ce6.js"><link rel="prefetch" href="/notebook/assets/js/17.e052aba2.js"><link rel="prefetch" href="/notebook/assets/js/170.344bc81f.js"><link rel="prefetch" href="/notebook/assets/js/171.0b06bad0.js"><link rel="prefetch" href="/notebook/assets/js/172.957ba2f2.js"><link rel="prefetch" href="/notebook/assets/js/173.7eefcee6.js"><link rel="prefetch" href="/notebook/assets/js/174.5963c9e8.js"><link rel="prefetch" href="/notebook/assets/js/175.f4bd19b3.js"><link rel="prefetch" href="/notebook/assets/js/176.e5aae9b8.js"><link rel="prefetch" href="/notebook/assets/js/177.753a7150.js"><link rel="prefetch" href="/notebook/assets/js/178.700ebe0a.js"><link rel="prefetch" href="/notebook/assets/js/179.33b10ecd.js"><link rel="prefetch" href="/notebook/assets/js/18.cd7552b2.js"><link rel="prefetch" href="/notebook/assets/js/180.39eb3869.js"><link rel="prefetch" href="/notebook/assets/js/19.44006621.js"><link rel="prefetch" href="/notebook/assets/js/20.3f76f59e.js"><link rel="prefetch" href="/notebook/assets/js/21.1c512f1e.js"><link rel="prefetch" href="/notebook/assets/js/22.0869447f.js"><link rel="prefetch" href="/notebook/assets/js/23.0bf54841.js"><link rel="prefetch" href="/notebook/assets/js/24.9b5123a4.js"><link rel="prefetch" href="/notebook/assets/js/25.76caf35f.js"><link rel="prefetch" href="/notebook/assets/js/26.0fd928ea.js"><link rel="prefetch" href="/notebook/assets/js/27.21644d61.js"><link rel="prefetch" href="/notebook/assets/js/28.ffbc80a1.js"><link rel="prefetch" href="/notebook/assets/js/29.4941c79b.js"><link rel="prefetch" href="/notebook/assets/js/3.6b735fd9.js"><link rel="prefetch" href="/notebook/assets/js/30.f78b69cf.js"><link rel="prefetch" href="/notebook/assets/js/31.57da179b.js"><link rel="prefetch" href="/notebook/assets/js/32.f4f294a3.js"><link rel="prefetch" href="/notebook/assets/js/33.9d4ed1a3.js"><link rel="prefetch" href="/notebook/assets/js/34.8df29565.js"><link rel="prefetch" href="/notebook/assets/js/35.d1683813.js"><link rel="prefetch" href="/notebook/assets/js/36.ab5fb31e.js"><link rel="prefetch" href="/notebook/assets/js/37.38881015.js"><link rel="prefetch" href="/notebook/assets/js/38.4fba4911.js"><link rel="prefetch" href="/notebook/assets/js/4.15df75ff.js"><link rel="prefetch" href="/notebook/assets/js/40.46f89a35.js"><link rel="prefetch" href="/notebook/assets/js/41.32e84631.js"><link rel="prefetch" href="/notebook/assets/js/42.a120a61d.js"><link rel="prefetch" href="/notebook/assets/js/43.b8b3dea0.js"><link rel="prefetch" href="/notebook/assets/js/44.1324d90c.js"><link rel="prefetch" href="/notebook/assets/js/45.4522649e.js"><link rel="prefetch" href="/notebook/assets/js/46.599ac356.js"><link rel="prefetch" href="/notebook/assets/js/47.83af9820.js"><link rel="prefetch" href="/notebook/assets/js/48.56b22dd4.js"><link rel="prefetch" href="/notebook/assets/js/49.5a59a9d9.js"><link rel="prefetch" href="/notebook/assets/js/5.e9546050.js"><link rel="prefetch" href="/notebook/assets/js/50.ce5c2e53.js"><link rel="prefetch" href="/notebook/assets/js/51.92e9d2a1.js"><link rel="prefetch" href="/notebook/assets/js/52.b2729120.js"><link rel="prefetch" href="/notebook/assets/js/53.48380f3b.js"><link rel="prefetch" href="/notebook/assets/js/54.c3d91512.js"><link rel="prefetch" href="/notebook/assets/js/55.5f30883f.js"><link rel="prefetch" href="/notebook/assets/js/56.2b2b9c59.js"><link rel="prefetch" href="/notebook/assets/js/57.d5256c84.js"><link rel="prefetch" href="/notebook/assets/js/58.9f8c9a60.js"><link rel="prefetch" href="/notebook/assets/js/59.2bc777df.js"><link rel="prefetch" href="/notebook/assets/js/6.8628b954.js"><link rel="prefetch" href="/notebook/assets/js/60.07b3a0bf.js"><link rel="prefetch" href="/notebook/assets/js/61.e0e63333.js"><link rel="prefetch" href="/notebook/assets/js/62.049ceef2.js"><link rel="prefetch" href="/notebook/assets/js/63.14826e2f.js"><link rel="prefetch" href="/notebook/assets/js/64.1edaf80b.js"><link rel="prefetch" href="/notebook/assets/js/65.cf738bf7.js"><link rel="prefetch" href="/notebook/assets/js/66.b6f64760.js"><link rel="prefetch" href="/notebook/assets/js/67.a48c2cc0.js"><link rel="prefetch" href="/notebook/assets/js/68.fe1893f5.js"><link rel="prefetch" href="/notebook/assets/js/69.a5e08e15.js"><link rel="prefetch" href="/notebook/assets/js/7.b2201f04.js"><link rel="prefetch" href="/notebook/assets/js/70.ec911aa1.js"><link rel="prefetch" href="/notebook/assets/js/71.f27185dd.js"><link rel="prefetch" href="/notebook/assets/js/72.474c1bd6.js"><link rel="prefetch" href="/notebook/assets/js/73.5ecba00d.js"><link rel="prefetch" href="/notebook/assets/js/74.3a0e8699.js"><link rel="prefetch" href="/notebook/assets/js/75.4beebb02.js"><link rel="prefetch" href="/notebook/assets/js/76.88eafca2.js"><link rel="prefetch" href="/notebook/assets/js/77.b48607cd.js"><link rel="prefetch" href="/notebook/assets/js/78.e09e23cb.js"><link rel="prefetch" href="/notebook/assets/js/79.47046879.js"><link rel="prefetch" href="/notebook/assets/js/8.954d4587.js"><link rel="prefetch" href="/notebook/assets/js/80.4d6aafb1.js"><link rel="prefetch" href="/notebook/assets/js/81.8ec9147f.js"><link rel="prefetch" href="/notebook/assets/js/82.f76d2e7f.js"><link rel="prefetch" href="/notebook/assets/js/83.596f0ca9.js"><link rel="prefetch" href="/notebook/assets/js/84.baccf8ec.js"><link rel="prefetch" href="/notebook/assets/js/85.eb8d9429.js"><link rel="prefetch" href="/notebook/assets/js/86.b963062c.js"><link rel="prefetch" href="/notebook/assets/js/87.6e9e5d18.js"><link rel="prefetch" href="/notebook/assets/js/88.8f8e98d5.js"><link rel="prefetch" href="/notebook/assets/js/89.65a000f9.js"><link rel="prefetch" href="/notebook/assets/js/9.d2e6b08c.js"><link rel="prefetch" href="/notebook/assets/js/90.ca547bf9.js"><link rel="prefetch" href="/notebook/assets/js/91.880afc80.js"><link rel="prefetch" href="/notebook/assets/js/92.a3f203b6.js"><link rel="prefetch" href="/notebook/assets/js/93.bafee662.js"><link rel="prefetch" href="/notebook/assets/js/94.a2ff30a5.js"><link rel="prefetch" href="/notebook/assets/js/95.54e66985.js"><link rel="prefetch" href="/notebook/assets/js/96.e2621b07.js"><link rel="prefetch" href="/notebook/assets/js/97.b9590b19.js"><link rel="prefetch" href="/notebook/assets/js/98.8ee8814d.js"><link rel="prefetch" href="/notebook/assets/js/99.a1f6adb4.js">
+    <link rel="stylesheet" href="/notebook/assets/css/0.styles.2780c180.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notebook/" class="home-link router-link-active"><img src="/notebook/image/PWA/icon-512x512.png" alt="Blog Note" class="logo"> <span class="site-name can-hide">Blog Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/notebook/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计科基础" class="dropdown-title"><span class="title">计科基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/base/dataStructure/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/designPattern/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/network/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/frontend/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/frame/" class="nav-link">
+  框架
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/app/" class="nav-link">
+  移动端
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/backend/" class="nav-link router-link-active">
+  后端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂记" class="dropdown-title"><span class="title">杂记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/develop/" class="nav-link">
+  遇到的坑
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/others/" class="nav-link">
+  其他
+</a></li></ul></div></div> <a href="https://github.com/c-yi/notebook" target="_blank" rel="noopener noreferrer" class="repo-link">
+    github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/notebook/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计科基础" class="dropdown-title"><span class="title">计科基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/base/dataStructure/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/designPattern/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/network/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/frontend/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/frame/" class="nav-link">
+  框架
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/app/" class="nav-link">
+  移动端
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/backend/" class="nav-link router-link-active">
+  后端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂记" class="dropdown-title"><span class="title">杂记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/develop/" class="nav-link">
+  遇到的坑
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/others/" class="nav-link">
+  其他
+</a></li></ul></div></div> <a href="https://github.com/c-yi/notebook" target="_blank" rel="noopener noreferrer" class="repo-link">
+    github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>node</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>python</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>mysql</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notebook/note/backend/mysql/" class="sidebar-link">数据库</a></li><li><a href="/notebook/note/backend/mysql/01_库操作.html" class="sidebar-link">库操作</a></li><li><a href="/notebook/note/backend/mysql/02_表操作.html" class="sidebar-link">表操作</a></li><li><a href="/notebook/note/backend/mysql/03_数据操作.html" class="sidebar-link">数据操作</a></li><li><a href="/notebook/note/backend/mysql/04_字符集,校对集.html" class="sidebar-link">字符集 / 校对集</a></li><li><a href="/notebook/note/backend/mysql/05_字段类型.html" class="active sidebar-link">字段类型</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#整数" class="sidebar-link">整数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#示例" class="sidebar-link">示例</a></li></ul></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#小数" class="sidebar-link">小数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#浮点" class="sidebar-link">浮点</a></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#定点" class="sidebar-link">定点</a></li></ul></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#字符串" class="sidebar-link">字符串</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#定长" class="sidebar-link">定长</a></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#变长" class="sidebar-link">变长</a></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#文本类型" class="sidebar-link">文本类型</a></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#枚举" class="sidebar-link">枚举</a></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#集合" class="sidebar-link">集合</a></li></ul></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#时间日期" class="sidebar-link">时间日期</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#年" class="sidebar-link">年</a></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#时间戳" class="sidebar-link">时间戳</a></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#日期" class="sidebar-link">日期</a></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#e-g-10" class="sidebar-link">e.g</a></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#日期时间" class="sidebar-link">日期时间</a></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#时间" class="sidebar-link">时间</a></li></ul></li><li class="sidebar-sub-header"><a href="/notebook/note/backend/mysql/05_字段类型.html#总结" class="sidebar-link">总结</a></li></ul></li><li><a href="/notebook/note/backend/mysql/06_属性.html" class="sidebar-link">属性</a></li><li><a href="/notebook/note/backend/mysql/07_三大范式.html" class="sidebar-link">设计表</a></li><li><a href="/notebook/note/backend/mysql/08_增删改查.html" class="sidebar-link">高级操作</a></li><li><a href="/notebook/note/backend/mysql/08_数据库备份与还原.html" class="sidebar-link">数据库备份与还原</a></li><li><a href="/notebook/note/backend/mysql/10_多表查询.html" class="sidebar-link">多表查询</a></li><li><a href="/notebook/note/backend/mysql/11_子查询.html" class="sidebar-link">子查询</a></li><li><a href="/notebook/note/backend/mysql/11外键.html" class="sidebar-link">外键</a></li><li><a href="/notebook/note/backend/mysql/12_事务.html" class="sidebar-link">事务</a></li><li><a href="/notebook/note/backend/mysql/13_用户管理和权限管理.html" class="sidebar-link">用户管理和权限管理</a></li><li><a href="/notebook/note/backend/mysql/14_视图.html" class="sidebar-link">视图</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="字段类型"><a href="#字段类型" class="header-anchor">#</a> 字段类型</h1> <blockquote><p>插入数据必须要和字段类型对应,否则数据错误</p></blockquote> <p>MySQL 四大数据类型</p> <ul><li>整数类型</li> <li>小数类型</li> <li>字符串类型</li> <li>时间日期类型</li></ul> <h2 id="整数"><a href="#整数" class="header-anchor">#</a> 整数</h2> <ul><li>MySQL中为了数据空间的有效使用,设定了五种整数类型
+<strong>默认是有符号的 ,无符号需要使用过 unsigned修正</strong></li></ul> <p>数值型存储在 MySQL中分为有符号(有负数)和无符号(纯正数)</p> <p><strong>位宽</strong> : 数据类型括号后面是位宽(数字个数,±占一个位宽),数据大小由数据类型决定,与位宽无关,当不足位宽是 可以使用 zerofill 填充</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>#zerofill 只能对正数进行填充
+crate table user(
+    age tinyint unsigned zerofill, # unsigned 无符号从零开始
+)charset utf8MB4;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h3> <ol><li><p>设计一个表记录个人信息 : 年龄 头发数量</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>crate table user(
+    age tinyint unsigned, # unsigned 无符号从零开始
+    hair int unsigned
+)charset utf8MB4;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></li> <li><p>设计4s 店的库存</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code># 4s 店 是先卖后进货,所以会出现库存为负数的情况
+
+create table 4s (
+    stock smallint , # 库存可能为负
+    sales mediumint unsigned,
+    purchase mediumint unsigned
+)charset utf8mb4;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></li></ol> <h2 id="小数"><a href="#小数" class="header-anchor">#</a> 小数</h2> <h3 id="浮点"><a href="#浮点" class="header-anchor">#</a> 浮点</h3> <p>浮点数:float/ double,<strong>存储不是特别精确的数值数据</strong>
+浮点数又称之为精度数据,分为两种</p> <ul><li>单精度: float,使用4个字节存储,精度范围为7-8位有效数字</li> <li>双精度: double,使用8个字节存储,精度范围为15-16位有效数字</li></ul> <p>浮点数超过精度范围会自动进行四舍五入
+精度可以指定整数和小数部分
+默认不指定,整数部分不超过最大值,小数部分保留2位
+可以指定: float/double(总长度,小数部分长度)
+可以使用科学计数法插入数据</p> <h4 id="e-g"><a href="#e-g" class="header-anchor">#</a> e.g</h4> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>2、记录商品的价格
+#商品名字字符串
+#商品价格一般都允许带小数
+create table t_1l(
+	goods_name varchar(20),
+	goods_price float
+)charset utf8
+insert into t_ll values( 'Nokia3310', 199.99)
+insert into t_11 values('Nokia6100', 1999.9999); # 会被四舍五入到2000
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="定点"><a href="#定点" class="header-anchor">#</a> 定点</h3> <p>概念:decimal,能够保证精度的小数</p> <ul><li><p>不固定存储空间存储
+每9个数字使用4个字节存储</p></li> <li><p>定点型可以指定整数部分长度和小数部分长度</p> <ul><li>默认不指定,10位有效整数,0位小数</li> <li>可以指定: decimal ( 有效数位,小数部分数位 )</li> <li>有效数位不超过65个</li></ul></li> <li><p>数据规范</p> <ul><li>整数部分超出报错</li> <li>小数部分超出四舍五入</li></ul></li></ul> <h4 id="e-g-2"><a href="#e-g-2" class="header-anchor">#</a> e.g</h4> <p>记录个人资产情况:资产和负债</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>
+#资产和负债应该都是精确的,小数部分可以到分
+create table t 12(
+	money decimal(14, 2),
+	bet decimal(10, 2)
+)charset utf8;
+insert into t_12 values(111111111. 12, 1111111.999);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="字符串"><a href="#字符串" class="header-anchor">#</a> 字符串</h2> <h3 id="定长"><a href="#定长" class="header-anchor">#</a> 定长</h3> <p>定长型:char(L),指定固定长度的存储空间存储字符串</p> <ul><li><p>定长是指定存储长度</p></li> <li><p>定长的长度是字符而不是字节</p> <ul><li>L的最大值是255</li> <li>实际存储空间:L字符数*字符集对应字节数</li></ul></li> <li><p>定长里存储的数据不能超过指定长度,但是可以小于指定长度</p></li> <li><p>字符串数据使用单引号或者双引号包裹</p></li></ul> <h4 id="e-g-3"><a href="#e-g-3" class="header-anchor">#</a> e.g</h4> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>记录个人信息:身份证信息和手机号码
+#身份证为固定长度18位(数字)
+#手机号码是11位固定长度(数字)
+create table t_13(
+	id_number char (18),
+	phone_number char (11)
+)charset utf8;
+Insert into t_13 values(&quot;440111999912120304&quot;,&quot;13512345678&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="变长"><a href="#变长" class="header-anchor">#</a> 变长</h3> <p>变长型: varchar(L),根据实际存储的数据变化存储空间</p> <ul><li>变长型的存储空间是由实际存储数据决定的</li> <li>变长型的也是指字符而不是字节
+<ul><li>L指定的是最大存储的数据长度</li> <li>L最大值理论是65535</li> <li>变长需要额外产生1-2个字节,用来记录实际数据的长度
+<ul><li>数据长度小于256个,多1个字节</li> <li>数据长度大于256个,多2个字节</li></ul></li> <li>实际存储空间:实际字符数*字符集对应字节数+记录长度</li></ul></li> <li>变长数据不能超过定义的最大长度</li> <li>变长 varchar是根据数据的长度实际计算存储空间</li></ul> <h4 id="e-g-4"><a href="#e-g-4" class="header-anchor">#</a> e.g</h4> <p>记录个人信息:用户名、密码、姓名、身份证</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>
+#用户名不确定长度,最长不超过50个字符
+#密码不确定长度,最长不超过15个字符
+#姓名不确定长度,最长不超过10个字符
+#身份证固定长度,18个字符
+create table t_11(
+	`username` varchar (50),
+	`password` varchar (15),
+	`name` varchar(10),
+	`id_number` char (18)
+)charset utf8;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="文本类型"><a href="#文本类型" class="header-anchor">#</a> 文本类型</h3> <p>文本字符串:text/blob,专门用来存储较长的文本
+文本字符串通常在超过255个字符时使用
+文本字符串包含两大类</p> <ul><li>text:普通字符
+<ul><li>intext:迷你文本,不超过2∧8-1个字符</li> <li>text:普通文本,不超过2∧16-1个字符</li> <li>mediumtext:中型文本,不超过2^24-1个字符</li> <li>longtext:长文本,不超过2A32-1个字符(4G)</li></ul></li> <li>blob : 二进制字符(与text类似)
+<ul><li>tinyblob</li> <li>blob</li> <li>mediumblob</li> <li>longblob</li></ul></li></ul> <h4 id="e-g-5"><a href="#e-g-5" class="header-anchor">#</a> e.g</h4> <p>新闻</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>#标题一般不会超过50个字符, varchar
+#作者一般不会超过10个字符: varchar
+#内容通常都很长,使用text
+create table t_15(
+	author varchar (10),
+	title varchar(50),
+	content text
+) charset utf8;
+insert into t_15 values('佚名','给联合国的一封信','给联合国的一封信...');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="枚举"><a href="#枚举" class="header-anchor">#</a> 枚举</h3> <p>目标:9num,了解枚举概念和存储原理,掌握枚举的实际应用</p> <blockquote><p>概念 枚举:一种映射存储方式,以较小的空间存储较多的数据</p></blockquote> <ul><li>枚举是在定义时确定可能出现的可能</li> <li>枚举在定义后数据只能出现定义时其中的一种</li> <li>枚举类似一种单选框</li> <li>枚举使用1-2个字节存储,最多可以设计65535个选项</li> <li>枚举实际存储是使用数值,映射对应的元素数据,从1开始</li> <li>枚举语法:enum(元素1,元素2…,元素N);</li></ul> <h4 id="e-g-6"><a href="#e-g-6" class="header-anchor">#</a> e.g</h4> <p>1、记录人群类型:小朋友、少年、青年、中年、老年,每个人实际只属于一种类别</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code># 要保证未来数据只能出现在某种可能中,所以要先列出来,可以使用enum
+create table t_16(
+	type enum('小朋友','少年','青年','中年','老年')
+)charset utf8;
+insert into t_16 values('少年');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>2、enum是建立映射关系,然后实际存储是数字,数值是按照元素顺序从1开始</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>#可以使用字段+0来判定数据具体的效果(字符串转数值为0)
+select type, type +0 from t_16;
+insert into t_16 values(5)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="集合"><a href="#集合" class="header-anchor">#</a> 集合</h3> <p><strong>概念</strong> 集合:set,一种映射存储方式,以较小的空间存储较多的数据</p> <ul><li>集合是在定义时确定可能出现的元素进行穷举</li> <li>集合在定义后数据只能出现定义时其中的元素(可以是多个)</li> <li>集合类似一种多选框</li> <li>集合使用1-8个字节存储数据,最多可以设计64个元素</li> <li>集合实际存储是使用数值(二进制位),映射对应的元素数据,每个元素对应一个比特位</li> <li>集合语法:set(元素1,元素2…元素N)</li></ul> <h4 id="e-g-7"><a href="#e-g-7" class="header-anchor">#</a> e.g</h4> <ol><li>记录个人的球类爱好,有篮球、足球、羽毛球、网球、乒乓球、排球、台球、冰球</li></ol> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code># 爱好可以是多种,并非固定的,但是只能从规定的类型中选择
+create table t_17(
+	hobby set('足球','篮球','羽毛球','网球','乒乓球','排球','台球','冰球')
+)charset utf8;
+insert into t_17 values('足球')
+insert into t_17 values('冰球','台球','篮球')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="时间日期"><a href="#时间日期" class="header-anchor">#</a> 时间日期</h2> <h3 id="年"><a href="#年" class="header-anchor">#</a> 年</h3> <p>MySQL中使用1个字节存储年份</p> <ul><li>year 能够表示的范围是1901-2155年(256年)
+<ul><li>year的特殊值是:0000</li></ul></li> <li>year允许用户使用两种方式设计(效果一样)
+<ul><li>year</li> <li>year(4)</li></ul></li></ul> <h4 id="e-g-8"><a href="#e-g-8" class="header-anchor">#</a> e.g</h4> <ol><li>记录个人的出生年份</li></ol> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>create table t_18(
+	y1 year,
+	y2 year (4)
+)charset utf8;
+insert into t_18 values(1901, 2155);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="时间戳"><a href="#时间戳" class="header-anchor">#</a> 时间戳</h3> <p>时间戳: timestamp,基于格林威治时间的时间记录</p> <ul><li>MySQL中时间戳表现形式不是秒数,而是年月日时分秒格式</li> <li>YYYY-MM-DD HH: I: SS</li> <li>YYYYMMDDHHIISS</li> <li>timestamp使用4个字节存储</li> <li>timestamp 的特点是所对应的记录不论哪个字段被更新,该字段都会更新到当前时间</li></ul> <h4 id="e-g-9"><a href="#e-g-9" class="header-anchor">#</a> e.g</h4> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>1、记录商品库存的最后更新时间
+create table t19(
+	goods_name varchar(10),
+	goods_inventory int unsigned,
+	change_time timestamp
+)charset utf8;
+insert into t-19 values('Nokia3110', 100, '1971-01-01 00: 00: 00')
+insert into t_19 values( 'Nokia7100', 100, '19710101000000')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><strong>注意</strong>:在MSQL8以后,取消了 timestamp的默认自动更新,</p> <p>如果需要使用,需要额外使用属性: on update current_timestamp</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>alter table t_19 add c_time timestamp on update current_timestamp;
+update t_19 set goods_inventory =80
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="日期"><a href="#日期" class="header-anchor">#</a> 日期</h3> <p>日期:date,用来记录年月日信息</p> <ul><li>使用3个字节存储数据</li> <li>存储日期的格式为: YYYY-MM-DD</li> <li>存储的范围是:1001-01-01~9999-12-31</li></ul> <h3 id="e-g-10"><a href="#e-g-10" class="header-anchor">#</a> e.g</h3> <p>记录个人生日</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>
+create table t 20(
+	name varchar(10),
+	birth date
+)charset utf8;
+insert into t_20 values ('Jim','2000-12-12');
+insert into t_20 values ('Tom','10011212')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="日期时间"><a href="#日期时间" class="header-anchor">#</a> 日期时间</h3> <p>日期时间: datetime,用来综合存储日期和时间</p> <ul><li>使用8个字节存储数据</li> <li>存储格式为: YYYY-MM-DD HH: Il: SS</li> <li>存储区间为:1000-010100:00:00到9999-12-3123:59:59</li></ul> <h4 id="e-g-11"><a href="#e-g-11" class="header-anchor">#</a> e.g</h4> <p>记录个人具体的出生时间</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>
+create table t_21(
+	name varchar(10),
+	birth datetime
+)charset utf8;
+insert into t_21 values('Jim', '2000-12-12 12: 12: 12');
+insert into t_21 values('Tom', '10011212182323');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="时间"><a href="#时间" class="header-anchor">#</a> 时间</h3> <p>时间:time,用来记录时间或者时间段</p> <ul><li>使用3个字节存储数据</li> <li>数据范围是-838:59:59--838:59:591</li> <li>数据插入的格式分为两种</li> <li>时间格式:[H]HH:ll:SS([]表示可以没有)</li> <li>时间段格式:D HH:ll:SS(D表示天)</li></ul> <h4 id="e-g-12"><a href="#e-g-12" class="header-anchor">#</a> e.g</h4> <p>记录用户登录的具体时间</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>#具体登录时间可以使用时间戳(包含年月日时分秒信息)
+#也可以时间 datetime格式,或者date+time双字段格式(具体后面学习范式时会知道该怎么用)
+create table t_22(
+login_timel int unsigned
+login_time2 datetime
+login_date date
+login_time3 time
+)charset utf8
+insert into t_22 values(12345678,'2000-12-1212:12:12','2000-12-12','12:12:12');
+insert into t_22 values(1234567,'2000-12-1212:12:12','2000-12-12','312:14:12');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <ol><li><p>字段类型是用来规范数据的格式的</p></li> <li><p>MySQL中有很多类型用来规范数据格式</p> <ul><li>整数类型(常用)
+常用类型: tinyint、int</li></ul> <ul><li>小数类型(常用)
+常用类型: decimal、 float</li> <li>字符串类型(常用)
+常用类型:char、 varchar、text</li> <li>时间日期类型(不常用:通常使用真正时间戳存储数据,然后PHP进行灵活解读)</li></ul></li> <li><p>实际开发的时候,一定要仔细了解需求,根据需求判定好具体选用那种数据类型</p> <ul><li>最原始的维护能够具有最大的通用性(选中类型)</li> <li>最小的消耗能够解决全部的问题(巧妙利用存储空间)</li></ul></li></ol></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/c-yi/notebook/edit/master/docs/note/backend/mysql/05_字段类型.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">最近更新于:</span> <span class="time">2/16/2020, 9:51:46 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notebook/note/backend/mysql/04_字符集,校对集.html" class="prev">
+        字符集 / 校对集
+      </a></span> <span class="next"><a href="/notebook/note/backend/mysql/06_属性.html">
+        属性
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;left:240px;bottom:0px;width:135px;height:300px;z-index:99999;opacity:1;pointer-events:none;"><canvas id="live2dcanvas" width="135" height="300" class="live2dcanvas" style="position:absolute;left:0px;top:0px;width:135px;height:300px;"></canvas></div></div></div>
+    <script src="/notebook/assets/js/app.5b743b3d.js" defer></script><script src="/notebook/assets/js/2.5a190a38.js" defer></script><script src="/notebook/assets/js/39.e2732399.js" defer></script><script src="/notebook/assets/js/10.996aadc4.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>源码 | Blog Note</title>
+    <meta name="description" content="Just playing around">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/notebook/image/PWA/icon-128x128.png">
+  <link rel="apple-touch-icon" href="/notebook/image/PWA/icon-128x128.png">
+  <link rel="manifest" href="/notebook/manifest.json">
+  <link rel="theme" content="#FFFFFF">
+    
+    <link rel="preload" href="/notebook/assets/css/0.styles.2780c180.css" as="style"><link rel="preload" href="/notebook/assets/js/app.5b743b3d.js" as="script"><link rel="preload" href="/notebook/assets/js/2.5a190a38.js" as="script"><link rel="preload" href="/notebook/assets/js/113.c18b5f89.js" as="script"><link rel="preload" href="/notebook/assets/js/10.996aadc4.js" as="script"><link rel="prefetch" href="/notebook/assets/js/100.4162c49e.js"><link rel="prefetch" href="/notebook/assets/js/101.675afa13.js"><link rel="prefetch" href="/notebook/assets/js/102.3dcf49f6.js"><link rel="prefetch" href="/notebook/assets/js/103.8b2eb3e8.js"><link rel="prefetch" href="/notebook/assets/js/104.3d483aed.js"><link rel="prefetch" href="/notebook/assets/js/105.2f869c10.js"><link rel="prefetch" href="/notebook/assets/js/106.a675d60a.js"><link rel="prefetch" href="/notebook/assets/js/107.c0849254.js"><link rel="prefetch" href="/notebook/assets/js/108.c90aa6ac.js"><link rel="prefetch" href="/notebook/assets/js/109.e5c27bf4.js"><link rel="prefetch" href="/notebook/assets/js/11.30b20ddb.js"><link rel="prefetch" href="/notebook/assets/js/110.67983a88.js"><link rel="prefetch" href="/notebook/assets/js/111.bf1b30e8.js"><link rel="prefetch" href="/notebook/assets/js/112.c822d78c.js"><link rel="prefetch" href="/notebook/assets/js/114.8a218373.js"><link rel="prefetch" href="/notebook/assets/js/115.d77c4669.js"><link rel="prefetch" href="/notebook/assets/js/116.1bc60bdd.js"><link rel="prefetch" href="/notebook/assets/js/117.4227ed4f.js"><link rel="prefetch" href="/notebook/assets/js/118.d987b8ec.js"><link rel="prefetch" href="/notebook/assets/js/119.3228c591.js"><link rel="prefetch" href="/notebook/assets/js/12.70ad555c.js"><link rel="prefetch" href="/notebook/assets/js/120.6eabe999.js"><link rel="prefetch" href="/notebook/assets/js/121.690a1434.js"><link rel="prefetch" href="/notebook/assets/js/122.1ea0585c.js"><link rel="prefetch" href="/notebook/assets/js/123.080ce91b.js"><link rel="prefetch" href="/notebook/assets/js/124.aafaca19.js"><link rel="prefetch" href="/notebook/assets/js/125.88a77240.js"><link rel="prefetch" href="/notebook/assets/js/126.c89543c1.js"><link rel="prefetch" href="/notebook/assets/js/127.846ad094.js"><link rel="prefetch" href="/notebook/assets/js/128.663b8ca6.js"><link rel="prefetch" href="/notebook/assets/js/129.5030a1b6.js"><link rel="prefetch" href="/notebook/assets/js/13.dcec235f.js"><link rel="prefetch" href="/notebook/assets/js/130.50d05092.js"><link rel="prefetch" href="/notebook/assets/js/131.92790e24.js"><link rel="prefetch" href="/notebook/assets/js/132.8551a1f0.js"><link rel="prefetch" href="/notebook/assets/js/133.4596d152.js"><link rel="prefetch" href="/notebook/assets/js/134.eec455bb.js"><link rel="prefetch" href="/notebook/assets/js/135.df697c1d.js"><link rel="prefetch" href="/notebook/assets/js/136.5311ccfd.js"><link rel="prefetch" href="/notebook/assets/js/137.b4699437.js"><link rel="prefetch" href="/notebook/assets/js/138.d95b906a.js"><link rel="prefetch" href="/notebook/assets/js/139.96475758.js"><link rel="prefetch" href="/notebook/assets/js/14.7599f488.js"><link rel="prefetch" href="/notebook/assets/js/140.900ccd18.js"><link rel="prefetch" href="/notebook/assets/js/141.76084cbe.js"><link rel="prefetch" href="/notebook/assets/js/142.6b6a25ff.js"><link rel="prefetch" href="/notebook/assets/js/143.d6fcb782.js"><link rel="prefetch" href="/notebook/assets/js/144.4ba4cb3b.js"><link rel="prefetch" href="/notebook/assets/js/145.1d7ed115.js"><link rel="prefetch" href="/notebook/assets/js/146.4ef35055.js"><link rel="prefetch" href="/notebook/assets/js/147.608a0e17.js"><link rel="prefetch" href="/notebook/assets/js/148.0e07035a.js"><link rel="prefetch" href="/notebook/assets/js/149.74f6ed82.js"><link rel="prefetch" href="/notebook/assets/js/15.e3accbe9.js"><link rel="prefetch" href="/notebook/assets/js/150.edfab1a0.js"><link rel="prefetch" href="/notebook/assets/js/151.44c43916.js"><link rel="prefetch" href="/notebook/assets/js/152.a6bbb2bb.js"><link rel="prefetch" href="/notebook/assets/js/153.896ecd2e.js"><link rel="prefetch" href="/notebook/assets/js/154.9d9888b7.js"><link rel="prefetch" href="/notebook/assets/js/155.0bf19dce.js"><link rel="prefetch" href="/notebook/assets/js/156.827990e4.js"><link rel="prefetch" href="/notebook/assets/js/157.ac99d1c4.js"><link rel="prefetch" href="/notebook/assets/js/158.3956d464.js"><link rel="prefetch" href="/notebook/assets/js/159.2a590ce5.js"><link rel="prefetch" href="/notebook/assets/js/16.625a9414.js"><link rel="prefetch" href="/notebook/assets/js/160.e28c9388.js"><link rel="prefetch" href="/notebook/assets/js/161.ddd91662.js"><link rel="prefetch" href="/notebook/assets/js/162.ab62bfae.js"><link rel="prefetch" href="/notebook/assets/js/163.abbc5b04.js"><link rel="prefetch" href="/notebook/assets/js/164.bf31117f.js"><link rel="prefetch" href="/notebook/assets/js/165.dd560c76.js"><link rel="prefetch" href="/notebook/assets/js/166.d64a1496.js"><link rel="prefetch" href="/notebook/assets/js/167.8924a84c.js"><link rel="prefetch" href="/notebook/assets/js/168.762be210.js"><link rel="prefetch" href="/notebook/assets/js/169.02347ce6.js"><link rel="prefetch" href="/notebook/assets/js/17.e052aba2.js"><link rel="prefetch" href="/notebook/assets/js/170.344bc81f.js"><link rel="prefetch" href="/notebook/assets/js/171.0b06bad0.js"><link rel="prefetch" href="/notebook/assets/js/172.957ba2f2.js"><link rel="prefetch" href="/notebook/assets/js/173.7eefcee6.js"><link rel="prefetch" href="/notebook/assets/js/174.5963c9e8.js"><link rel="prefetch" href="/notebook/assets/js/175.f4bd19b3.js"><link rel="prefetch" href="/notebook/assets/js/176.e5aae9b8.js"><link rel="prefetch" href="/notebook/assets/js/177.753a7150.js"><link rel="prefetch" href="/notebook/assets/js/178.700ebe0a.js"><link rel="prefetch" href="/notebook/assets/js/179.33b10ecd.js"><link rel="prefetch" href="/notebook/assets/js/18.cd7552b2.js"><link rel="prefetch" href="/notebook/assets/js/180.39eb3869.js"><link rel="prefetch" href="/notebook/assets/js/19.44006621.js"><link rel="prefetch" href="/notebook/assets/js/20.3f76f59e.js"><link rel="prefetch" href="/notebook/assets/js/21.1c512f1e.js"><link rel="prefetch" href="/notebook/assets/js/22.0869447f.js"><link rel="prefetch" href="/notebook/assets/js/23.0bf54841.js"><link rel="prefetch" href="/notebook/assets/js/24.9b5123a4.js"><link rel="prefetch" href="/notebook/assets/js/25.76caf35f.js"><link rel="prefetch" href="/notebook/assets/js/26.0fd928ea.js"><link rel="prefetch" href="/notebook/assets/js/27.21644d61.js"><link rel="prefetch" href="/notebook/assets/js/28.ffbc80a1.js"><link rel="prefetch" href="/notebook/assets/js/29.4941c79b.js"><link rel="prefetch" href="/notebook/assets/js/3.6b735fd9.js"><link rel="prefetch" href="/notebook/assets/js/30.f78b69cf.js"><link rel="prefetch" href="/notebook/assets/js/31.57da179b.js"><link rel="prefetch" href="/notebook/assets/js/32.f4f294a3.js"><link rel="prefetch" href="/notebook/assets/js/33.9d4ed1a3.js"><link rel="prefetch" href="/notebook/assets/js/34.8df29565.js"><link rel="prefetch" href="/notebook/assets/js/35.d1683813.js"><link rel="prefetch" href="/notebook/assets/js/36.ab5fb31e.js"><link rel="prefetch" href="/notebook/assets/js/37.38881015.js"><link rel="prefetch" href="/notebook/assets/js/38.4fba4911.js"><link rel="prefetch" href="/notebook/assets/js/39.e2732399.js"><link rel="prefetch" href="/notebook/assets/js/4.15df75ff.js"><link rel="prefetch" href="/notebook/assets/js/40.46f89a35.js"><link rel="prefetch" href="/notebook/assets/js/41.32e84631.js"><link rel="prefetch" href="/notebook/assets/js/42.a120a61d.js"><link rel="prefetch" href="/notebook/assets/js/43.b8b3dea0.js"><link rel="prefetch" href="/notebook/assets/js/44.1324d90c.js"><link rel="prefetch" href="/notebook/assets/js/45.4522649e.js"><link rel="prefetch" href="/notebook/assets/js/46.599ac356.js"><link rel="prefetch" href="/notebook/assets/js/47.83af9820.js"><link rel="prefetch" href="/notebook/assets/js/48.56b22dd4.js"><link rel="prefetch" href="/notebook/assets/js/49.5a59a9d9.js"><link rel="prefetch" href="/notebook/assets/js/5.e9546050.js"><link rel="prefetch" href="/notebook/assets/js/50.ce5c2e53.js"><link rel="prefetch" href="/notebook/assets/js/51.92e9d2a1.js"><link rel="prefetch" href="/notebook/assets/js/52.b2729120.js"><link rel="prefetch" href="/notebook/assets/js/53.48380f3b.js"><link rel="prefetch" href="/notebook/assets/js/54.c3d91512.js"><link rel="prefetch" href="/notebook/assets/js/55.5f30883f.js"><link rel="prefetch" href="/notebook/assets/js/56.2b2b9c59.js"><link rel="prefetch" href="/notebook/assets/js/57.d5256c84.js"><link rel="prefetch" href="/notebook/assets/js/58.9f8c9a60.js"><link rel="prefetch" href="/notebook/assets/js/59.2bc777df.js"><link rel="prefetch" href="/notebook/assets/js/6.8628b954.js"><link rel="prefetch" href="/notebook/assets/js/60.07b3a0bf.js"><link rel="prefetch" href="/notebook/assets/js/61.e0e63333.js"><link rel="prefetch" href="/notebook/assets/js/62.049ceef2.js"><link rel="prefetch" href="/notebook/assets/js/63.14826e2f.js"><link rel="prefetch" href="/notebook/assets/js/64.1edaf80b.js"><link rel="prefetch" href="/notebook/assets/js/65.cf738bf7.js"><link rel="prefetch" href="/notebook/assets/js/66.b6f64760.js"><link rel="prefetch" href="/notebook/assets/js/67.a48c2cc0.js"><link rel="prefetch" href="/notebook/assets/js/68.fe1893f5.js"><link rel="prefetch" href="/notebook/assets/js/69.a5e08e15.js"><link rel="prefetch" href="/notebook/assets/js/7.b2201f04.js"><link rel="prefetch" href="/notebook/assets/js/70.ec911aa1.js"><link rel="prefetch" href="/notebook/assets/js/71.f27185dd.js"><link rel="prefetch" href="/notebook/assets/js/72.474c1bd6.js"><link rel="prefetch" href="/notebook/assets/js/73.5ecba00d.js"><link rel="prefetch" href="/notebook/assets/js/74.3a0e8699.js"><link rel="prefetch" href="/notebook/assets/js/75.4beebb02.js"><link rel="prefetch" href="/notebook/assets/js/76.88eafca2.js"><link rel="prefetch" href="/notebook/assets/js/77.b48607cd.js"><link rel="prefetch" href="/notebook/assets/js/78.e09e23cb.js"><link rel="prefetch" href="/notebook/assets/js/79.47046879.js"><link rel="prefetch" href="/notebook/assets/js/8.954d4587.js"><link rel="prefetch" href="/notebook/assets/js/80.4d6aafb1.js"><link rel="prefetch" href="/notebook/assets/js/81.8ec9147f.js"><link rel="prefetch" href="/notebook/assets/js/82.f76d2e7f.js"><link rel="prefetch" href="/notebook/assets/js/83.596f0ca9.js"><link rel="prefetch" href="/notebook/assets/js/84.baccf8ec.js"><link rel="prefetch" href="/notebook/assets/js/85.eb8d9429.js"><link rel="prefetch" href="/notebook/assets/js/86.b963062c.js"><link rel="prefetch" href="/notebook/assets/js/87.6e9e5d18.js"><link rel="prefetch" href="/notebook/assets/js/88.8f8e98d5.js"><link rel="prefetch" href="/notebook/assets/js/89.65a000f9.js"><link rel="prefetch" href="/notebook/assets/js/9.d2e6b08c.js"><link rel="prefetch" href="/notebook/assets/js/90.ca547bf9.js"><link rel="prefetch" href="/notebook/assets/js/91.880afc80.js"><link rel="prefetch" href="/notebook/assets/js/92.a3f203b6.js"><link rel="prefetch" href="/notebook/assets/js/93.bafee662.js"><link rel="prefetch" href="/notebook/assets/js/94.a2ff30a5.js"><link rel="prefetch" href="/notebook/assets/js/95.54e66985.js"><link rel="prefetch" href="/notebook/assets/js/96.e2621b07.js"><link rel="prefetch" href="/notebook/assets/js/97.b9590b19.js"><link rel="prefetch" href="/notebook/assets/js/98.8ee8814d.js"><link rel="prefetch" href="/notebook/assets/js/99.a1f6adb4.js">
+    <link rel="stylesheet" href="/notebook/assets/css/0.styles.2780c180.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notebook/" class="home-link router-link-active"><img src="/notebook/image/PWA/icon-512x512.png" alt="Blog Note" class="logo"> <span class="site-name can-hide">Blog Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/notebook/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计科基础" class="dropdown-title"><span class="title">计科基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/base/dataStructure/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/designPattern/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/network/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/frontend/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/frame/" class="nav-link router-link-active">
+  框架
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/app/" class="nav-link">
+  移动端
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/backend/" class="nav-link">
+  后端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂记" class="dropdown-title"><span class="title">杂记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/develop/" class="nav-link">
+  遇到的坑
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/others/" class="nav-link">
+  其他
+</a></li></ul></div></div> <a href="https://github.com/c-yi/notebook" target="_blank" rel="noopener noreferrer" class="repo-link">
+    github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/notebook/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计科基础" class="dropdown-title"><span class="title">计科基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/base/dataStructure/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/designPattern/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/base/network/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/frontend/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/frame/" class="nav-link router-link-active">
+  框架
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/app/" class="nav-link">
+  移动端
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/backend/" class="nav-link">
+  后端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂记" class="dropdown-title"><span class="title">杂记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notebook/note/develop/" class="nav-link">
+  遇到的坑
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/notebook/note/others/" class="nav-link">
+  其他
+</a></li></ul></div></div> <a href="https://github.com/c-yi/notebook" target="_blank" rel="noopener noreferrer" class="repo-link">
+    github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>react</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notebook/note/frame/react/" class="sidebar-link">react</a></li><li><a href="/notebook/note/frame/react/01_基础语法.html" class="sidebar-link">基础语法</a></li><li><a href="/notebook/note/frame/react/02_Props数据校验.html" class="sidebar-link">props数据校验</a></li><li><a href="/notebook/note/frame/react/03_虚拟DOM.html" class="sidebar-link">虚拟DOM</a></li><li><a href="/notebook/note/frame/react/04_生命周期.html" class="sidebar-link">生命周期</a></li><li><a href="/notebook/note/frame/react/05_动画.html" class="sidebar-link">动画</a></li><li><a href="/notebook/note/frame/react/06_组件分类.html" class="sidebar-link">组件分类</a></li><li><a href="/notebook/note/frame/react/07_Redux.html" class="sidebar-link">redux</a></li><li><a href="/notebook/note/frame/react/08_Redux-thunk.html" class="sidebar-link">Redux-thunk</a></li><li><a href="/notebook/note/frame/react/09_Redux-saga.html" class="sidebar-link">Redux-saga</a></li><li><a href="/notebook/note/frame/react/10_React-redux.html" class="sidebar-link">React-redux</a></li><li><a href="/notebook/note/frame/react/11_immutable.html" class="sidebar-link">immutable</a></li><li><a href="/notebook/note/frame/react/12_redux-immutable.html" class="sidebar-link">redux-immutable</a></li><li><a href="/notebook/note/frame/react/13_路由.html" class="sidebar-link">路由</a></li><li><a href="/notebook/note/frame/react/14_fiber.html" class="sidebar-link">fiber</a></li><li><a href="/notebook/note/frame/react/源码学习.html" class="active sidebar-link">源码</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notebook/note/frame/react/源码学习.html#fiber-hook" class="sidebar-link">fiber&amp;hook</a></li></ul></li><li><a href="/notebook/note/frame/react/遇到的坑.html" class="sidebar-link">遇到的坑</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>minApp</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="源码"><a href="#源码" class="header-anchor">#</a> 源码</h1> <h2 id="fiber-hook"><a href="#fiber-hook" class="header-anchor">#</a> fiber&amp;hook</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 1. fiber 就是把树变成了一个链表结构,然后在遍历的时候可以中断</span>
+<span class="token comment">// 2. hooks 实际上就是一个数组存储,每次都是 index++ 这也是为什么不能再if else 中使用 hooks 的原因</span>
+<span class="token comment">// 3. 利用浏览器的空闲时间,执行我们的任务</span>
+
+<span class="token comment">// 工作中的 root,fiber的父元素/全聚德根节点</span>
+<span class="token keyword">let</span> wipRoot <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token comment">// 下一个单元任务</span>
+<span class="token keyword">let</span> nextUnitWork <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token comment">// 工作中的fiber 所谓的fiber就是虚拟Dom的对象,多几个属性而已 child sibling return</span>
+<span class="token keyword">let</span> wipFiber <span class="token operator">=</span> <span class="token keyword">null</span>
+<span class="token comment">// 当前工作的节点</span>
+<span class="token keyword">let</span> currentRoot <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token comment">// 删除节点队列</span>
+<span class="token keyword">let</span> deletions <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token comment">// hooks索引 , 多个hooks 是根据索引来判定的</span>
+<span class="token keyword">let</span> hookIndex <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 创建 并返回 vdom
+ * @param type 类型
+ * @param props 属性值
+ * @param children 子节点
+ * @returns {{type: *, props: {children: {type: string, props: {nodeValue: *, children: Array}}[]}}}
+ */</span>
+<span class="token keyword">function</span> <span class="token function">createElement</span><span class="token punctuation">(</span><span class="token parameter">type<span class="token punctuation">,</span> props<span class="token punctuation">,</span> <span class="token operator">...</span>children</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">delete</span> props<span class="token punctuation">.</span>__source<span class="token punctuation">;</span>
+    <span class="token keyword">delete</span> props<span class="token punctuation">.</span>__self<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        type<span class="token punctuation">,</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token operator">...</span>props<span class="token punctuation">,</span>
+            children<span class="token operator">:</span> children<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">child</span> <span class="token operator">=&gt;</span>
+                <span class="token keyword">typeof</span> child <span class="token operator">===</span> <span class="token string">'object'</span> <span class="token operator">?</span> child <span class="token operator">:</span> <span class="token function">createText</span><span class="token punctuation">(</span>child<span class="token punctuation">)</span>
+            <span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 创建文本节点
+ * @param text
+ * @returns {{type: string, props: {nodeValue: *, children: Array}}}
+ */</span>
+<span class="token keyword">function</span> <span class="token function">createText</span><span class="token punctuation">(</span><span class="token parameter">text</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        type<span class="token operator">:</span> <span class="token string">'TEXT'</span><span class="token punctuation">,</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+            nodeValue<span class="token operator">:</span> text<span class="token punctuation">,</span>
+            children<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * render 函数 ,启动任务队列
+ * @param vdom
+ * @param container
+ */</span>
+<span class="token keyword">function</span> <span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">vdom<span class="token punctuation">,</span> container</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// render 只需要初始化我们的 wipRoot就可以了</span>
+    <span class="token comment">// workInProgressRoot</span>
+    wipRoot <span class="token operator">=</span> <span class="token punctuation">{</span>
+        dom<span class="token operator">:</span> container<span class="token punctuation">,</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+            children<span class="token operator">:</span> <span class="token punctuation">[</span>vdom<span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        base<span class="token operator">:</span> currentRoot <span class="token comment">//上一个fiber 的根节点</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token comment">// 设置启动任务</span>
+    deletions <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    nextUnitWork <span class="token operator">=</span> wipRoot
+    <span class="token comment">/*
+    dom 操作
+    let dom = vdom.type === 'TEXT'
+        ? document.createTextNode('')
+        : document.createElement(vdom.type);
+
+    Object.keys(vdom.props).forEach(name =&gt; {
+        if (name !== 'children') {
+            dom[name] = vdom.props[name]
+        }
+    })
+
+    vdom.props.children.forEach(child =&gt; render(child, dom));
+    container.appendChild(dom)*/</span>
+    <span class="token comment">//container.innerHTML = `&lt;pre&gt;${JSON.stringify(vdom, null, 2)}&lt;/pre&gt;`</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 帧 任务</span>
+window<span class="token punctuation">.</span><span class="token function">requestIdleCallback</span><span class="token punctuation">(</span>workLoop<span class="token punctuation">)</span>
+
+<span class="token comment">// 提交更新 对DOM节点进行操作</span>
+<span class="token comment">/**
+ *  完成fiber 任务之后进行提交操作
+ */</span>
+<span class="token keyword">function</span> <span class="token function">commitRoot</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    deletions<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">deletion</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">commitWorker</span><span class="token punctuation">(</span>deletion<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token function">commitWorker</span><span class="token punctuation">(</span>wipRoot<span class="token punctuation">.</span>child<span class="token punctuation">)</span>
+    currentRoot <span class="token operator">=</span> wipRoot<span class="token punctuation">;</span>  <span class="token comment">// 保存当前工作的节点</span>
+    wipRoot <span class="token operator">=</span> <span class="token keyword">null</span> <span class="token comment">// 置空工作中的节点</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">/**
+ * 更新操作
+ * @param dom
+ * @param preProps
+ * @param nextProps
+ */</span>
+<span class="token keyword">function</span> <span class="token function">updateDom</span><span class="token punctuation">(</span><span class="token parameter">dom<span class="token punctuation">,</span> preProps<span class="token punctuation">,</span> nextProps</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//1. 规避 children 属性</span>
+    <span class="token comment">//2. 删除属性 属性在老的节点中存在,在新节点中不存在</span>
+    <span class="token comment">//3. 新增属性 属性在老的节点中不存在,在新的节点中存在</span>
+
+    <span class="token comment">// todo 兼容性处理</span>
+    <span class="token comment">// 删除</span>
+    Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>preProps<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">name</span> <span class="token operator">=&gt;</span> name <span class="token operator">!==</span> <span class="token string">'children'</span><span class="token punctuation">)</span><span class="token comment">//规避children</span>
+        <span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">name</span> <span class="token operator">=&gt;</span> <span class="token operator">!</span><span class="token punctuation">(</span>name <span class="token keyword">in</span> nextProps<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 在新节点中不存在</span>
+        <span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">name</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 事件处理</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>name<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'on'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                dom<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span>name<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> preProps<span class="token punctuation">[</span>name<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token comment">//属性处理</span>
+                dom<span class="token punctuation">[</span>name<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">''</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token comment">//新增</span>
+    Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>nextProps<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">name</span> <span class="token operator">=&gt;</span> name <span class="token operator">!==</span> <span class="token string">'children'</span><span class="token punctuation">)</span><span class="token comment">//规避children</span>
+        <span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">name</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 事件处理</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>name<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'on'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                dom<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span>name<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nextProps<span class="token punctuation">[</span>name<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token comment">//属性处理</span>
+                dom<span class="token punctuation">[</span>name<span class="token punctuation">]</span> <span class="token operator">=</span> nextProps<span class="token punctuation">[</span>name<span class="token punctuation">]</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 删除操作
+ * @param fiber
+ * @param domParent
+ */</span>
+<span class="token keyword">function</span> <span class="token function">commitDeletion</span><span class="token punctuation">(</span><span class="token parameter">fiber<span class="token punctuation">,</span> domParent</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//如果Dom存在就直接删除,不存在就认为它是一个函数,递归往下查找删除</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>dom<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        domParent<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>dom<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token function">commitDeletion</span><span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>child<span class="token punctuation">,</span> domParent<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * dom操作
+ * @param fiber
+ */</span>
+<span class="token keyword">function</span> <span class="token function">commitWorker</span><span class="token punctuation">(</span><span class="token parameter">fiber</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>fiber<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//如果 fiber 不存在就直接return</span>
+        <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//函数组件是没有 dom 属性的,所以需要向上查找</span>
+    <span class="token keyword">let</span> domParentFiber <span class="token operator">=</span> fiber<span class="token punctuation">.</span>parent<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>domParentFiber<span class="token punctuation">.</span>dom<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        domParentFiber <span class="token operator">=</span> domParentFiber<span class="token punctuation">.</span>parent
+    <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> domParent <span class="token operator">=</span> domParentFiber<span class="token punctuation">.</span>dom<span class="token punctuation">;</span>
+    <span class="token comment">// 替换操作</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>effectTag <span class="token operator">===</span> <span class="token string">'PLACEMENT'</span> <span class="token operator">&amp;&amp;</span> fiber<span class="token punctuation">.</span>dom <span class="token operator">!==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        domParent<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>dom<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token comment">// 删除操作</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>effectTag <span class="token operator">===</span> <span class="token string">'DELETION'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">commitDeletion</span><span class="token punctuation">(</span>fiber<span class="token punctuation">,</span> domParent<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token comment">// 更新操作</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>effectTag <span class="token operator">===</span> <span class="token string">'UPDATE'</span> <span class="token operator">&amp;&amp;</span> fiber<span class="token punctuation">.</span>dom <span class="token operator">!==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 更新操作</span>
+        <span class="token function">updateDom</span><span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>dom<span class="token punctuation">,</span> fiber<span class="token punctuation">.</span>base<span class="token punctuation">.</span>props<span class="token punctuation">,</span> fiber<span class="token punctuation">.</span>props<span class="token punctuation">)</span>
+
+    <span class="token punctuation">}</span>
+    <span class="token function">commitWorker</span><span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>child<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">commitWorker</span><span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>sibling<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 事件循环</span>
+<span class="token comment">/**
+ * 事件循环
+ * @param deadline
+ */</span>
+<span class="token keyword">function</span> <span class="token function">workLoop</span><span class="token punctuation">(</span><span class="token parameter">deadline</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 有下一个任务并且在这一帧当中还有剩余时间</span>
+    <span class="token comment">// 没有考虑超时的情况 deadline.timeOut</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>nextUnitWork <span class="token operator">&amp;&amp;</span> deadline<span class="token punctuation">.</span><span class="token function">timeRemaining</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 获取下一个任务</span>
+        nextUnitWork <span class="token operator">=</span> <span class="token function">performUnitOfWork</span><span class="token punctuation">(</span>nextUnitWork<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 如果没有diff 任务了 ,并且根节点存在, 我们就提交DOM 更新的申请</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>nextUnitWork <span class="token operator">&amp;&amp;</span> wipRoot<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// todo 提交commit任务</span>
+        <span class="token function">commitRoot</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 否则就将diff 继续交给 window.requestIdleCallback ,等待下一次的空闲时间</span>
+    window<span class="token punctuation">.</span><span class="token function">requestIdleCallback</span><span class="token punctuation">(</span>workLoop<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">/** 创建dom， 根据vdom or fiber */</span>
+<span class="token keyword">function</span> <span class="token function">createDom</span><span class="token punctuation">(</span><span class="token parameter">vdom</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> dom <span class="token operator">=</span> vdom<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">'TEXT'</span>
+        <span class="token operator">?</span> document<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span>
+        <span class="token operator">:</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>vdom<span class="token punctuation">.</span>type<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">updateDom</span><span class="token punctuation">(</span>dom<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> vdom<span class="token punctuation">.</span>props<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> dom<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 实际上的 hooks 是链表结构,这里用数组来展示,hook 只存在在函数组件中</span>
+<span class="token comment">/**
+ * hooks -&gt; setState 实现
+ * @param init 初始值
+ * @returns {*[]}
+ */</span>
+<span class="token keyword">function</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token parameter">init</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> oldHooks <span class="token operator">=</span> wipFiber<span class="token punctuation">.</span>base <span class="token operator">&amp;&amp;</span> wipFiber<span class="token punctuation">.</span>base<span class="token punctuation">.</span>hooks <span class="token operator">&amp;&amp;</span> wipFiber<span class="token punctuation">.</span>base<span class="token punctuation">.</span>hooks<span class="token punctuation">[</span>hookIndex<span class="token punctuation">]</span>
+    <span class="token keyword">const</span> hook <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 判断是否有新的 hook 中的state,没有就用默认值</span>
+        state<span class="token operator">:</span> oldHooks <span class="token operator">?</span> oldHooks<span class="token punctuation">.</span>state <span class="token operator">:</span> init
+    <span class="token punctuation">}</span>
+    <span class="token keyword">const</span> action <span class="token operator">=</span> oldHooks <span class="token operator">?</span> oldHooks<span class="token punctuation">.</span>queue <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token comment">// 修改state的值</span>
+    action<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">action</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        hook<span class="token punctuation">.</span>state <span class="token operator">=</span> action
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token function-variable function">setState</span> <span class="token operator">=</span> <span class="token parameter">action</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        hook<span class="token punctuation">.</span>queue<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>action<span class="token punctuation">)</span>
+        wipRoot <span class="token operator">=</span> <span class="token punctuation">{</span>
+            dom<span class="token operator">:</span> currentRoot<span class="token punctuation">.</span>dom<span class="token punctuation">,</span>
+            props<span class="token operator">:</span> currentRoot<span class="token punctuation">.</span>props<span class="token punctuation">,</span>
+            base<span class="token operator">:</span> currentRoot
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 设置新的任务</span>
+        nextUnitWork <span class="token operator">=</span> wipRoot
+        deletions <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    wipFiber<span class="token punctuation">.</span>hooks<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>hook<span class="token punctuation">)</span>
+    hookIndex<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span>hook<span class="token punctuation">.</span>state<span class="token punctuation">,</span> setState<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 更新函数式组件
+ * @param fiber
+ */</span>
+<span class="token keyword">function</span> <span class="token function">updateFunctionComponent</span><span class="token punctuation">(</span><span class="token parameter">fiber</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    wipFiber <span class="token operator">=</span> fiber<span class="token punctuation">;</span>
+    hookIndex <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    wipFiber<span class="token punctuation">.</span>hooks <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token comment">// 执行函数 传入 props</span>
+    <span class="token keyword">const</span> children <span class="token operator">=</span> <span class="token punctuation">[</span>fiber<span class="token punctuation">.</span><span class="token function">type</span><span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>props<span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token function">reconcileChildren</span><span class="token punctuation">(</span>fiber<span class="token punctuation">,</span> children<span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 更新普通DOM
+ * @param fiber
+ */</span>
+<span class="token keyword">function</span> <span class="token function">updateHostComponent</span><span class="token punctuation">(</span><span class="token parameter">fiber</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 获取下一个任务</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>fiber<span class="token punctuation">.</span>dom<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 如果没有 dom 就不是入口</span>
+        fiber<span class="token punctuation">.</span>dom <span class="token operator">=</span> <span class="token function">createDom</span><span class="token punctuation">(</span>fiber<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 真实的DOM 操作</span>
+    <span class="token comment">/*if (fiber.parent) {
+        //如果有父节点就把新节点 appendChild 进去
+        fiber.parent.dom.appendChild(fiber.dom)
+    }*/</span>
+    <span class="token comment">// 遍历子节点</span>
+    <span class="token keyword">const</span> elements <span class="token operator">=</span> fiber<span class="token punctuation">.</span>props<span class="token punctuation">.</span>children
+    <span class="token function">reconcileChildren</span><span class="token punctuation">(</span>fiber<span class="token punctuation">,</span> elements<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 返回下一个任务
+ * @param fiber
+ * @returns {*} 下一个任务
+ */</span>
+<span class="token keyword">function</span> <span class="token function">performUnitOfWork</span><span class="token punctuation">(</span><span class="token parameter">fiber</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> isFunction <span class="token operator">=</span> fiber<span class="token punctuation">.</span>type <span class="token keyword">instanceof</span> <span class="token class-name">Function</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>isFunction<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 函数式组件</span>
+        <span class="token function">updateFunctionComponent</span><span class="token punctuation">(</span>fiber<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 普通DOM</span>
+        <span class="token function">updateHostComponent</span><span class="token punctuation">(</span>fiber<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 找下一个任务</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>child<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 先找子元素</span>
+        <span class="token keyword">return</span> fiber<span class="token punctuation">.</span>child
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 没有子元素就找兄弟元素</span>
+    <span class="token keyword">let</span> nextFiber <span class="token operator">=</span> fiber<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>nextFiber<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 如果有兄弟元素就返回兄弟元素</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>nextFiber<span class="token punctuation">.</span>sibling<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> nextFiber<span class="token punctuation">.</span>sibling
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 没有兄弟元素就返回 父元素</span>
+        <span class="token keyword">return</span> nextFiber<span class="token punctuation">.</span>parent
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 任务调度
+ * @param wipFiber 工作中的fiber
+ * @param elements 当前的VDom
+ */</span>
+<span class="token keyword">function</span> <span class="token function">reconcileChildren</span><span class="token punctuation">(</span><span class="token parameter">wipFiber<span class="token punctuation">,</span> elements</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 构建 新的fiber结构</span>
+    <span class="token keyword">let</span> index <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">let</span> oldFiber <span class="token operator">=</span> wipFiber<span class="token punctuation">.</span>base <span class="token operator">&amp;&amp;</span> wipFiber<span class="token punctuation">.</span>base<span class="token punctuation">.</span>child
+    <span class="token keyword">let</span> preSibling <span class="token operator">=</span> <span class="token keyword">null</span>
+    <span class="token comment">//while (index &lt; elements.length) {</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>index <span class="token operator">&lt;</span> elements<span class="token punctuation">.</span>length <span class="token operator">&amp;&amp;</span> oldFiber <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> element <span class="token operator">=</span> elements<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token comment">/*const newFiber = {
+            type: element.type,
+            props: element.props,
+            parent: wipFiber,
+            dom: null
+        };*/</span>
+        <span class="token keyword">let</span> newFiber <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token comment">// 对比 oldFiber的状态 和 当前 element</span>
+        <span class="token comment">// 1. 判断节点类型</span>
+        <span class="token keyword">const</span> sameType <span class="token operator">=</span> oldFiber <span class="token operator">&amp;&amp;</span> element <span class="token operator">&amp;&amp;</span> oldFiber<span class="token punctuation">.</span>type <span class="token operator">&amp;&amp;</span> element<span class="token punctuation">.</span>type<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>sameType<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 如果节点相同就复用节点,更新</span>
+            newFiber <span class="token operator">=</span> <span class="token punctuation">{</span>
+                type<span class="token operator">:</span> oldFiber<span class="token punctuation">.</span>type<span class="token punctuation">,</span>
+                props<span class="token operator">:</span> element<span class="token punctuation">.</span>props<span class="token punctuation">,</span>
+                parent<span class="token operator">:</span> wipFiber<span class="token punctuation">,</span>
+                dom<span class="token operator">:</span> oldFiber<span class="token punctuation">.</span>dom<span class="token punctuation">,</span>
+                base<span class="token operator">:</span> oldFiber<span class="token punctuation">,</span>
+                effectTag<span class="token operator">:</span> <span class="token string">'UPDATE'</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>sameType <span class="token operator">&amp;&amp;</span> element<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 如果节点不同 新的节点存在 //替换节点</span>
+            newFiber <span class="token operator">=</span> <span class="token punctuation">{</span>
+                type<span class="token operator">:</span> element<span class="token punctuation">.</span>type<span class="token punctuation">,</span>
+                props<span class="token operator">:</span> element<span class="token punctuation">.</span>props<span class="token punctuation">,</span>
+                parent<span class="token operator">:</span> wipFiber<span class="token punctuation">,</span>
+                dom<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+                base<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+                effectTag<span class="token operator">:</span> <span class="token string">'PLACEMENT'</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>sameType <span class="token operator">&amp;&amp;</span> oldFiber<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 如果节点不同 新的节点不存在 //删除节点</span>
+            oldFiber<span class="token punctuation">.</span>effectTag <span class="token operator">=</span> <span class="token string">'DELETION'</span>
+            deletions<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>oldFiber<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>oldFiber<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            oldFiber <span class="token operator">=</span> oldFiber<span class="token punctuation">.</span>sibling
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">===</span> <span class="token number">0</span>
+        <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 第一个元素是父元素的child属性</span>
+            wipFiber<span class="token punctuation">.</span>child <span class="token operator">=</span> newFiber
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 其他的是 sibling 兄弟属性</span>
+            preSibling<span class="token punctuation">.</span>sibling <span class="token operator">=</span> newFiber
+        <span class="token punctuation">}</span>
+<span class="token comment">// 每次 while 循环之后 对preSibling 进行修正</span>
+        preSibling <span class="token operator">=</span> newFiber<span class="token punctuation">;</span>
+        index<span class="token operator">++</span>
+    <span class="token punctuation">}</span>
+<span class="token comment">// 上面是fiber结构的构建过程,</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    createElement<span class="token punctuation">,</span>
+    render<span class="token punctuation">,</span>
+    useState
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br><span class="line-number">273</span><br><span class="line-number">274</span><br><span class="line-number">275</span><br><span class="line-number">276</span><br><span class="line-number">277</span><br><span class="line-number">278</span><br><span class="line-number">279</span><br><span class="line-number">280</span><br><span class="line-number">281</span><br><span class="line-number">282</span><br><span class="line-number">283</span><br><span class="line-number">284</span><br><span class="line-number">285</span><br><span class="line-number">286</span><br><span class="line-number">287</span><br><span class="line-number">288</span><br><span class="line-number">289</span><br><span class="line-number">290</span><br><span class="line-number">291</span><br><span class="line-number">292</span><br><span class="line-number">293</span><br><span class="line-number">294</span><br><span class="line-number">295</span><br><span class="line-number">296</span><br><span class="line-number">297</span><br><span class="line-number">298</span><br><span class="line-number">299</span><br><span class="line-number">300</span><br><span class="line-number">301</span><br><span class="line-number">302</span><br><span class="line-number">303</span><br><span class="line-number">304</span><br><span class="line-number">305</span><br><span class="line-number">306</span><br><span class="line-number">307</span><br><span class="line-number">308</span><br><span class="line-number">309</span><br><span class="line-number">310</span><br><span class="line-number">311</span><br><span class="line-number">312</span><br><span class="line-number">313</span><br><span class="line-number">314</span><br><span class="line-number">315</span><br><span class="line-number">316</span><br><span class="line-number">317</span><br><span class="line-number">318</span><br><span class="line-number">319</span><br><span class="line-number">320</span><br><span class="line-number">321</span><br><span class="line-number">322</span><br><span class="line-number">323</span><br><span class="line-number">324</span><br><span class="line-number">325</span><br><span class="line-number">326</span><br><span class="line-number">327</span><br><span class="line-number">328</span><br><span class="line-number">329</span><br><span class="line-number">330</span><br><span class="line-number">331</span><br><span class="line-number">332</span><br><span class="line-number">333</span><br><span class="line-number">334</span><br><span class="line-number">335</span><br><span class="line-number">336</span><br><span class="line-number">337</span><br><span class="line-number">338</span><br><span class="line-number">339</span><br><span class="line-number">340</span><br><span class="line-number">341</span><br><span class="line-number">342</span><br><span class="line-number">343</span><br><span class="line-number">344</span><br><span class="line-number">345</span><br><span class="line-number">346</span><br><span class="line-number">347</span><br><span class="line-number">348</span><br><span class="line-number">349</span><br><span class="line-number">350</span><br><span class="line-number">351</span><br><span class="line-number">352</span><br><span class="line-number">353</span><br><span class="line-number">354</span><br><span class="line-number">355</span><br><span class="line-number">356</span><br><span class="line-number">357</span><br><span class="line-number">358</span><br><span class="line-number">359</span><br><span class="line-number">360</span><br><span class="line-number">361</span><br><span class="line-number">362</span><br><span class="line-number">363</span><br><span class="line-number">364</span><br><span class="line-number">365</span><br><span class="line-number">366</span><br><span class="line-number">367</span><br><span class="line-number">368</span><br><span class="line-number">369</span><br><span class="line-number">370</span><br><span class="line-number">371</span><br><span class="line-number">372</span><br><span class="line-number">373</span><br><span class="line-number">374</span><br><span class="line-number">375</span><br><span class="line-number">376</span><br><span class="line-number">377</span><br><span class="line-number">378</span><br><span class="line-number">379</span><br><span class="line-number">380</span><br><span class="line-number">381</span><br><span class="line-number">382</span><br><span class="line-number">383</span><br><span class="line-number">384</span><br><span class="line-number">385</span><br><span class="line-number">386</span><br><span class="line-number">387</span><br><span class="line-number">388</span><br><span class="line-number">389</span><br><span class="line-number">390</span><br><span class="line-number">391</span><br><span class="line-number">392</span><br><span class="line-number">393</span><br><span class="line-number">394</span><br><span class="line-number">395</span><br><span class="line-number">396</span><br><span class="line-number">397</span><br><span class="line-number">398</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/c-yi/notebook/edit/master/docs/note/frame/react/源码学习.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">最近更新于:</span> <span class="time">1/9/2020, 1:50:18 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notebook/note/frame/react/14_fiber.html" class="prev">
+        fiber
+      </a></span> <span class="next"><a href="/notebook/note/frame/react/遇到的坑.html">
+        遇到的坑
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;left:240px;bottom:0px;width:135px;height:300px;z-index:99999;opacity:1;pointer-events:none;"><canvas id="live2dcanvas" width="135" height="300" class="live2dcanvas" style="position:absolute;left:0px;top:0px;width:135px;height:300px;"></canvas></div></div></div>
+    <script src="/notebook/assets/js/app.5b743b3d.js" defer></script><script src="/notebook/assets/js/2.5a190a38.js" defer></script><script src="/notebook/assets/js/113.c18b5f89.js" defer></script><script src="/notebook/assets/js/10.996aadc4.js" defer></script>
+  </body>
+</html>
